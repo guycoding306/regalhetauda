@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience refined hospitality at Regal Hetauda Resort in Hetauda, Nepal. Explore rooms, dining and memorable stays.">
+    <title>Regal Hetauda Resort | A Refined Escape</title>
+
+    <!-- Tailwind CSS (development CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Custom Tailwind Configuration -->
+    <script src="js/tailwind.config.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body class="bg-cream text-deep overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+    <header id="mainNavbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-deep/70 lg:bg-transparent">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="flex items-center justify-between h-20 lg:h-24">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 shrink-0 relative z-50">
+                    <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">
+                        R
+                    </span>
+                    <span class="flex flex-col">
+                        <span class="font-display text-white text-2xl leading-none tracking-wide">REGAL</span>
+                        <span class="text-gold text-[8px] sm:text-[9px] uppercase tracking-[3px] mt-1">Hetauda Resort</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 xl:gap-9">
+                    <a href="index.html" class="text-white text-xs uppercase tracking-widest font-semibold">Home</a>
+                    <a href="rooms.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Rooms</a>
+                    <a href="dining.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Dining</a>
+                    <a href="story.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Our Story</a>
+                    <a href="contact.html" class="text-gold hover:text-gold transition text-xs uppercase tracking-widest">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <a href="reserve.html" class="hidden lg:inline-flex items-center gap-3 bg-gold hover:bg-white text-deep px-6 py-4 text-[11px] font-bold uppercase tracking-widest transition duration-300">
+                    Reserve Your Stay
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <!-- Mobile Hamburger -->
+                <button id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu"
+                        class="lg:hidden relative z-50 w-11 h-11 border border-gold/70 flex flex-col items-center justify-center gap-[5px] text-white">
+                    <span id="line1" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line2" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line3" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobileMenu" class="hidden lg:hidden bg-deep border-t border-white/10">
+            <div class="px-6 py-6 flex flex-col gap-1 max-h-[calc(100dvh-80px)] overflow-y-auto">
+                <a href="index.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Home</a>
+                <a href="rooms.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Rooms & Suites</a>
+                <a href="dining.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Dining</a>
+                <a href="story.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Our Story</a>
+                <a href="contact.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Contact</a>
+                <a href="reserve.html" class="mobile-link mt-5 bg-gold text-deep text-center py-4 text-xs font-bold uppercase tracking-widest">
+                    Reserve Your Stay
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==========================================
+        REGAL HETAUDA RESORT - RESERVATION PAGE
+    ========================================== -->
+
+    <main class="bg-cream overflow-hidden">
+
+        <!-- ================= PAGE HERO ================= -->
+        <section class="relative min-h-[400px] sm:min-h-[470px] lg:min-h-[540px] flex items-center justify-center pt-24 overflow-hidden">
+
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=85"
+                    alt="Luxury resort accommodation"
+                    class="w-full h-full object-cover"
+                >
+
+                <div class="absolute inset-0 bg-gradient-to-r from-deep/95 via-deep/75 to-deep/40"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 w-full text-center">
+
+                <div class="flex items-center justify-center gap-4 mb-7">
+                    <span class="w-9 h-px bg-gold"></span>
+                    <span class="text-gold text-[10px] sm:text-xs font-bold tracking-[3px] uppercase">
+                        Your Regal Experience Awaits
+                    </span>
+                    <span class="w-9 h-px bg-gold"></span>
+                </div>
+
+                <h1 class="font-display text-white text-5xl sm:text-6xl lg:text-[85px] leading-tight">
+                    Reserve Your <em class="text-gold">Stay.</em>
+                </h1>
+
+                <p class="text-white/80 text-sm sm:text-base leading-8 max-w-2xl mx-auto mt-6">
+                    Begin planning your perfect escape. Share your preferences and let us help you arrange a memorable stay.
+                </p>
+
+                <nav aria-label="Breadcrumb" class="flex items-center justify-center gap-3 mt-9 text-[11px] uppercase tracking-[2px]">
+                    <a href="index.html" class="text-white/70 hover:text-gold transition">Home</a>
+                    <i class="bi bi-chevron-right text-gold text-[9px]"></i>
+                    <span class="text-gold">Reservations</span>
+                </nav>
+
+            </div>
+
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-1 bg-gold"></div>
+        </section>
+
+
+        <!-- ================= RESERVATION INTRO ================= -->
+        <section class="pt-16 md:pt-24 pb-10">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+
+                    <div class="max-w-3xl">
+                        <span class="section-eyebrow">Plan Your Visit</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-[58px] leading-tight mt-5">
+                            Your Journey to<br>
+                            <em class="text-gold">Relaxation Starts Here.</em>
+                        </h2>
+
+                        <p class="text-muted text-sm sm:text-base leading-8 mt-6">
+                            Complete the reservation enquiry form below with your preferred dates, accommodation and contact details.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 shrink-0 bg-forest flex items-center justify-center">
+                            <i class="bi bi-shield-check text-gold text-2xl"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="font-display text-xl text-forest">Personal Assistance</h3>
+                            <p class="text-muted text-xs mt-2">Availability confirmed by the resort</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESERVATION FORM ================= -->
+        <section class="pb-20 md:pb-28">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <form id="reservationForm">
+
+                    <div class="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+
+                        <!-- LEFT: FORM FIELDS -->
+                        <div class="lg:col-span-2 space-y-8">
+
+                            <!-- ================= STEP 1 ================= -->
+                            <div class="bg-white p-6 sm:p-9 lg:p-11 border-t-4 border-gold shadow-sm">
+
+                                <div class="flex items-start sm:items-center gap-5 mb-9 pb-7 border-b border-gray-100">
+
+                                    <div class="w-12 h-12 shrink-0 bg-forest text-gold flex items-center justify-center font-display text-xl">
+                                        01
+                                    </div>
+
+                                    <div>
+                                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                            Your Accommodation
+                                        </span>
+
+                                        <h3 class="font-display text-2xl sm:text-3xl text-forest mt-2">
+                                            Stay Details
+                                        </h3>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Room Type -->
+                                <div class="mb-7">
+                                    <label for="reserveRoom" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                        Select Room Type <span class="text-red-500">*</span>
+                                    </label>
+
+                                    <select
+                                        id="reserveRoom"
+                                        name="room"
+                                        required
+                                        class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest outline-none focus:border-gold transition"
+                                    >
+                                        <option value="">Choose your preferred room</option>
+                                        <option value="deluxe">Deluxe Retreat</option>
+                                        <option value="executive">Executive Suite</option>
+                                        <option value="signature">Regal Signature Suite</option>
+                                        <option value="deluxe-twin">Deluxe Twin Room</option>
+                                        <option value="executive-king">Executive King Room</option>
+                                        <option value="signature-family">Signature Family Suite</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- Dates -->
+                                <div class="grid sm:grid-cols-2 gap-6 mb-7">
+
+                                    <div>
+                                        <label for="reserveCheckin" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Check-in Date <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="date"
+                                            id="reserveCheckin"
+                                            name="checkin"
+                                            required
+                                            class="w-full min-w-0 border border-gray-200 bg-cream px-4 py-4 text-sm text-forest outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                    <div>
+                                        <label for="reserveCheckout" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Check-out Date <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="date"
+                                            id="reserveCheckout"
+                                            name="checkout"
+                                            required
+                                            class="w-full min-w-0 border border-gray-200 bg-cream px-4 py-4 text-sm text-forest outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Guests & Rooms -->
+                                <div class="grid sm:grid-cols-3 gap-6">
+
+                                    <div>
+                                        <label for="reserveAdults" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Adults <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <select
+                                            id="reserveAdults"
+                                            name="adults"
+                                            required
+                                            class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest outline-none focus:border-gold transition"
+                                        >
+                                            <option value="1">1 Adult</option>
+                                            <option value="2" selected>2 Adults</option>
+                                            <option value="3">3 Adults</option>
+                                            <option value="4">4 Adults</option>
+                                            <option value="5">5 Adults</option>
+                                            <option value="6">6 Adults</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="reserveChildren" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Children
+                                        </label>
+
+                                        <select
+                                            id="reserveChildren"
+                                            name="children"
+                                            class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest outline-none focus:border-gold transition"
+                                        >
+                                            <option value="0">0 Children</option>
+                                            <option value="1">1 Child</option>
+                                            <option value="2">2 Children</option>
+                                            <option value="3">3 Children</option>
+                                            <option value="4">4 Children</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="reserveRoomCount" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Number of Rooms
+                                        </label>
+
+                                        <select
+                                            id="reserveRoomCount"
+                                            name="rooms"
+                                            class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest outline-none focus:border-gold transition"
+                                        >
+                                            <option value="1">1 Room</option>
+                                            <option value="2">2 Rooms</option>
+                                            <option value="3">3 Rooms</option>
+                                            <option value="4">4 Rooms</option>
+                                            <option value="5">5 Rooms</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= STEP 2 ================= -->
+                            <div class="bg-white p-6 sm:p-9 lg:p-11 shadow-sm">
+
+                                <div class="flex items-start sm:items-center gap-5 mb-9 pb-7 border-b border-gray-100">
+
+                                    <div class="w-12 h-12 shrink-0 bg-forest text-gold flex items-center justify-center font-display text-xl">
+                                        02
+                                    </div>
+
+                                    <div>
+                                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                            About You
+                                        </span>
+
+                                        <h3 class="font-display text-2xl sm:text-3xl text-forest mt-2">
+                                            Guest Information
+                                        </h3>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- First & Last Name -->
+                                <div class="grid sm:grid-cols-2 gap-6 mb-7">
+
+                                    <div>
+                                        <label for="reserveFirstName" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            First Name <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="reserveFirstName"
+                                            name="firstName"
+                                            required
+                                            autocomplete="given-name"
+                                            placeholder="Enter first name"
+                                            class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                    <div>
+                                        <label for="reserveLastName" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Last Name <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="reserveLastName"
+                                            name="lastName"
+                                            required
+                                            autocomplete="family-name"
+                                            placeholder="Enter last name"
+                                            class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Email & Phone -->
+                                <div class="grid sm:grid-cols-2 gap-6 mb-7">
+
+                                    <div>
+                                        <label for="reserveEmail" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Email Address <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="email"
+                                            id="reserveEmail"
+                                            name="email"
+                                            required
+                                            autocomplete="email"
+                                            placeholder="you@example.com"
+                                            class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                    <div>
+                                        <label for="reservePhone" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Phone Number <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="tel"
+                                            id="reservePhone"
+                                            name="phone"
+                                            required
+                                            autocomplete="tel"
+                                            placeholder="+977 98XXXXXXXX"
+                                            class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Country -->
+                                <div>
+                                    <label for="reserveCountry" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                        Country / Region
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="reserveCountry"
+                                        name="country"
+                                        autocomplete="country-name"
+                                        placeholder="Enter your country"
+                                        class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= STEP 3 ================= -->
+                            <div class="bg-white p-6 sm:p-9 lg:p-11 shadow-sm">
+
+                                <div class="flex items-start sm:items-center gap-5 mb-9 pb-7 border-b border-gray-100">
+
+                                    <div class="w-12 h-12 shrink-0 bg-forest text-gold flex items-center justify-center font-display text-xl">
+                                        03
+                                    </div>
+
+                                    <div>
+                                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                            Personalise Your Visit
+                                        </span>
+
+                                        <h3 class="font-display text-2xl sm:text-3xl text-forest mt-2">
+                                            Special Requests
+                                        </h3>
+                                    </div>
+
+                                </div>
+
+                                <p class="text-muted text-sm leading-7 mb-7">
+                                    Have a special occasion or particular requirement? Share it below and our team can discuss the available arrangements.
+                                </p>
+
+                                <div class="mb-7">
+
+                                    <label for="reserveRequests" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                        Additional Requests (Optional)
+                                    </label>
+
+                                    <textarea
+                                        id="reserveRequests"
+                                        name="requests"
+                                        rows="5"
+                                        placeholder="Let us know about any special requests..."
+                                        class="w-full border border-gray-200 bg-cream px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition resize-y"
+                                    ></textarea>
+
+                                </div>
+
+                                <div class="bg-cream p-5 flex items-start gap-4">
+
+                                    <i class="bi bi-info-circle text-gold text-xl shrink-0"></i>
+
+                                    <p class="text-muted text-xs leading-6">
+                                        Special requests are subject to availability and must be confirmed by the resort.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================= STEP 4 ================= -->
+                            <div class="bg-white p-6 sm:p-9 lg:p-11 shadow-sm">
+
+                                <div class="flex items-start sm:items-center gap-5 mb-8">
+
+                                    <div class="w-12 h-12 shrink-0 bg-forest text-gold flex items-center justify-center font-display text-xl">
+                                        04
+                                    </div>
+
+                                    <div>
+                                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                            Final Step
+                                        </span>
+
+                                        <h3 class="font-display text-2xl sm:text-3xl text-forest mt-2">
+                                            Review & Enquire
+                                        </h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex items-start gap-3 mb-8">
+
+                                    <input
+                                        type="checkbox"
+                                        id="reserveConsent"
+                                        required
+                                        class="mt-1 w-4 h-4 accent-[#173B32] shrink-0"
+                                    >
+
+                                    <label for="reserveConsent" class="text-muted text-xs sm:text-sm leading-7">
+                                        I agree to provide my personal details to Regal Hetauda Resort for the purpose of responding to this reservation enquiry.
+                                    </label>
+
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    id="reserveSubmit"
+                                    class="w-full sm:w-auto inline-flex items-center justify-center gap-5 bg-forest hover:bg-gold text-white hover:text-deep px-9 py-5 text-xs font-bold uppercase tracking-widest transition"
+                                >
+                                    Prepare Reservation Enquiry
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </button>
+
+                                <p id="reservationStatus" role="status" aria-live="polite" class="hidden text-sm leading-7 mt-5"></p>
+
+                                <p class="text-muted text-xs leading-6 mt-6">
+                                    This form prepares an email enquiry. It does not confirm a reservation or process payment.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= RIGHT SIDEBAR ================= -->
+                        <aside class="lg:col-span-1">
+
+                            <div class="lg:sticky lg:top-28 space-y-7">
+
+                                <!-- Reservation Summary -->
+                                <div class="bg-white shadow-lg border-t-4 border-gold">
+
+                                    <div class="relative h-52 overflow-hidden">
+                                        <img
+                                            id="summaryRoomImage"
+                                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                                            alt="Selected accommodation"
+                                            class="w-full h-full object-cover"
+                                        >
+
+                                        <div class="absolute inset-0 bg-gradient-to-t from-deep/70 to-transparent"></div>
+
+                                        <div class="absolute bottom-5 left-6">
+                                            <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                                Your Stay
+                                            </span>
+
+                                            <h3 class="font-display text-white text-2xl mt-2">
+                                                Reservation Summary
+                                            </h3>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="p-6 sm:p-8">
+
+                                        <div class="space-y-5">
+
+                                            <div>
+                                                <span class="text-muted text-[10px] uppercase tracking-widest">
+                                                    Selected Room
+                                                </span>
+
+                                                <p id="summaryRoom" class="font-display text-xl text-forest mt-2">
+                                                    Not Selected
+                                                </p>
+                                            </div>
+
+                                            <div class="border-t border-gray-100 pt-5">
+                                                <span class="text-muted text-[10px] uppercase tracking-widest">
+                                                    Check In
+                                                </span>
+
+                                                <p id="summaryCheckin" class="text-forest font-semibold text-sm mt-2">
+                                                    Select a date
+                                                </p>
+                                            </div>
+
+                                            <div class="border-t border-gray-100 pt-5">
+                                                <span class="text-muted text-[10px] uppercase tracking-widest">
+                                                    Check Out
+                                                </span>
+
+                                                <p id="summaryCheckout" class="text-forest font-semibold text-sm mt-2">
+                                                    Select a date
+                                                </p>
+                                            </div>
+
+                                            <div class="grid grid-cols-2 gap-5 border-t border-gray-100 pt-5">
+
+                                                <div>
+                                                    <span class="text-muted text-[10px] uppercase tracking-widest">
+                                                        Guests
+                                                    </span>
+
+                                                    <p id="summaryGuests" class="text-forest font-semibold text-sm mt-2">
+                                                        2 Adults
+                                                    </p>
+                                                </div>
+
+                                                <div>
+                                                    <span class="text-muted text-[10px] uppercase tracking-widest">
+                                                        Rooms
+                                                    </span>
+
+                                                    <p id="summaryRooms" class="text-forest font-semibold text-sm mt-2">
+                                                        1 Room
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="border-t border-gray-100 pt-5">
+                                                <span class="text-muted text-[10px] uppercase tracking-widest">
+                                                    Duration
+                                                </span>
+
+                                                <p id="summaryNights" class="font-display text-2xl text-forest mt-2">
+                                                    — Nights
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- Pricing Notice -->
+                                        <div class="bg-cream p-5 mt-8">
+
+                                            <div class="flex items-start gap-3">
+                                                <i class="bi bi-info-circle text-gold text-lg shrink-0"></i>
+
+                                                <div>
+                                                    <h4 class="font-semibold text-forest text-sm mb-2">
+                                                        Pricing & Availability
+                                                    </h4>
+
+                                                    <p class="text-muted text-xs leading-6">
+                                                        Room rates, availability and booking terms will be confirmed by the resort.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Assistance -->
+                                <div class="bg-forest text-white p-7 sm:p-8">
+
+                                    <i class="bi bi-headset text-gold text-3xl"></i>
+
+                                    <h3 class="font-display text-2xl mt-5 mb-4">
+                                        Need Assistance?
+                                    </h3>
+
+                                    <p class="text-white/70 text-sm leading-7 mb-7">
+                                        Have questions about your stay? Contact our team for further assistance.
+                                    </p>
+
+                                    <a href="contact.html"
+                                    class="inline-flex items-center gap-4 text-gold hover:text-white text-xs font-bold uppercase tracking-widest transition">
+                                        Contact the Resort
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOTTOM CTA ================= -->
+        <section class="relative bg-deep text-white py-20 md:py-24 overflow-hidden">
+
+            <div class="absolute inset-0 opacity-15">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80"
+                    alt=""
+                    loading="lazy"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+
+                <span class="text-gold text-[11px] uppercase tracking-[3px] font-bold">
+                    Experience Regal
+                </span>
+
+                <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-6 mb-7">
+                    Beautiful Moments<br>
+                    <em class="text-gold">Are Waiting.</em>
+                </h2>
+
+                <p class="text-white/75 text-sm sm:text-base leading-8 max-w-2xl mx-auto mb-9">
+                    Explore our accommodation or get in touch to plan your next visit.
+                </p>
+
+                <a href="rooms.html"
+                class="inline-flex items-center justify-center gap-5 bg-gold hover:bg-white text-deep px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                    Explore Rooms & Suites
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-[#0B241E] text-white pt-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16">
+
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-3 mb-7">
+                        <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">R</span>
+                        <span class="flex flex-col">
+                            <span class="font-display text-2xl leading-none">REGAL</span>
+                            <span class="text-gold text-[8px] tracking-[3px] uppercase mt-1">Hetauda Resort</span>
+                        </span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-8">
+                        Refined comfort, thoughtful hospitality and meaningful moments in Hetauda, Nepal.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Explore</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                        <li><a href="rooms.html" class="hover:text-gold transition">Rooms & Suites</a></li>
+                        <li><a href="dining.html" class="hover:text-gold transition">Dining</a></li>
+                        <li><a href="story.html" class="hover:text-gold transition">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Guest Information</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="reserve.html" class="hover:text-gold transition">Reservations</a></li>
+                        <li><a href="contact.html" class="hover:text-gold transition">Contact Us</a></li>
+                        <li><a href="#gallery" class="hover:text-gold transition">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Get in Touch</h3>
+                    <div class="space-y-5 text-sm text-white/60">
+                        <p class="flex gap-3">
+                            <i class="bi bi-geo-alt text-gold"></i>
+                            <span>Piple-05, Hetauda, Nepal</span>
+                        </p>
+                        <a href="tel:+9779855071256" class="flex gap-3 hover:text-gold transition">
+                            <i class="bi bi-telephone text-gold"></i>
+                            +977 9855071256
+                        </a>
+                        <a href="mailto:info@regalheaudaresort.com" class="flex gap-3 break-all hover:text-gold transition">
+                            <i class="bi bi-envelope text-gold"></i>
+                            info@regalheaudaresort.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 py-7 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50 text-center">
+                <p>&copy; <span id="year"></span> Regal Hetauda Resort. All Rights Reserved.</p>
+                <p>Hetauda, Nepal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top"
+            class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-gold text-deep shadow-lg hidden items-center justify-center hover:bg-forest hover:text-white transition">
+        <i class="bi bi-arrow-up text-xl"></i>
+    </button>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

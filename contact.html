@@ -1,0 +1,806 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience refined hospitality at Regal Hetauda Resort in Hetauda, Nepal. Explore rooms, dining and memorable stays.">
+    <title>Regal Hetauda Resort | A Refined Escape</title>
+
+    <!-- Tailwind CSS (development CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Custom Tailwind Configuration -->
+    <script src="js/tailwind.config.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body class="bg-cream text-deep overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+    <header id="mainNavbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-deep/70 lg:bg-transparent">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="flex items-center justify-between h-20 lg:h-24">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 shrink-0 relative z-50">
+                    <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">
+                        R
+                    </span>
+                    <span class="flex flex-col">
+                        <span class="font-display text-white text-2xl leading-none tracking-wide">REGAL</span>
+                        <span class="text-gold text-[8px] sm:text-[9px] uppercase tracking-[3px] mt-1">Hetauda Resort</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 xl:gap-9">
+                    <a href="index.html" class="text-white text-xs uppercase tracking-widest font-semibold">Home</a>
+                    <a href="rooms.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Rooms</a>
+                    <a href="dining.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Dining</a>
+                    <a href="story.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Our Story</a>
+                    <a href="contact.html" class="text-gold hover:text-gold transition text-xs uppercase tracking-widest">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <a href="reserve.html" class="hidden lg:inline-flex items-center gap-3 bg-gold hover:bg-white text-deep px-6 py-4 text-[11px] font-bold uppercase tracking-widest transition duration-300">
+                    Reserve Your Stay
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <!-- Mobile Hamburger -->
+                <button id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu"
+                        class="lg:hidden relative z-50 w-11 h-11 border border-gold/70 flex flex-col items-center justify-center gap-[5px] text-white">
+                    <span id="line1" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line2" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line3" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobileMenu" class="hidden lg:hidden bg-deep border-t border-white/10">
+            <div class="px-6 py-6 flex flex-col gap-1 max-h-[calc(100dvh-80px)] overflow-y-auto">
+                <a href="index.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Home</a>
+                <a href="rooms.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Rooms & Suites</a>
+                <a href="dining.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Dining</a>
+                <a href="story.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Our Story</a>
+                <a href="contact.html" class="mobile-link text-gold py-3 border-b border-white/10 text-sm uppercase tracking-widest">Contact</a>
+                <a href="reserve.html" class="mobile-link mt-5 bg-gold text-deep text-center py-4 text-xs font-bold uppercase tracking-widest">
+                    Reserve Your Stay
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==========================================
+        REGAL HETAUDA RESORT - CONTACT PAGE
+    ========================================== -->
+
+    <main class="bg-cream overflow-hidden">
+
+        <!-- ================= PAGE HERO ================= -->
+        <section class="relative min-h-[430px] sm:min-h-[500px] lg:min-h-[580px] flex items-center justify-center pt-24 overflow-hidden">
+
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=85"
+                    alt="Resort hospitality setting"
+                    class="w-full h-full object-cover"
+                >
+
+                <div class="absolute inset-0 bg-gradient-to-r from-deep/95 via-deep/75 to-deep/40"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 w-full text-center">
+
+                <div class="flex items-center justify-center gap-4 mb-7">
+                    <span class="w-9 h-px bg-gold"></span>
+
+                    <span class="text-gold text-[10px] sm:text-xs font-bold tracking-[3px] uppercase">
+                        We'd Love to Hear from You
+                    </span>
+
+                    <span class="w-9 h-px bg-gold"></span>
+                </div>
+
+                <h1 class="font-display text-white text-5xl sm:text-6xl lg:text-[90px] leading-tight">
+                    Get in <em class="text-gold">Touch.</em>
+                </h1>
+
+                <p class="text-white/80 text-sm sm:text-base leading-8 max-w-2xl mx-auto mt-6">
+                    Have a question, a special request or a stay in mind?
+                    Our team looks forward to hearing from you.
+                </p>
+
+                <nav aria-label="Breadcrumb" class="flex items-center justify-center gap-3 mt-9 text-[11px] uppercase tracking-[2px]">
+                    <a href="index.html" class="text-white/70 hover:text-gold transition">
+                        Home
+                    </a>
+
+                    <i class="bi bi-chevron-right text-gold text-[9px]"></i>
+
+                    <span class="text-gold">Contact Us</span>
+                </nav>
+
+            </div>
+
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-1 bg-gold"></div>
+        </section>
+
+
+        <!-- ================= INTRODUCTION ================= -->
+        <section class="pt-20 md:pt-28 pb-12 md:pb-16">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-end">
+
+                    <div>
+                        <span class="section-eyebrow">Connect with Regal</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-[60px] leading-tight mt-6">
+                            We're Here to<br>
+                            <em class="text-gold">Help You.</em>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p class="text-muted text-sm sm:text-base leading-8 max-w-xl">
+                            Whether you're planning a relaxing getaway, exploring accommodation options or enquiring about a special occasion, we'd be delighted to assist. Reach out using the contact details below or send us a message.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT DETAILS ================= -->
+        <section class="pb-16 md:pb-24">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    <!-- Address -->
+                    <div class="bg-white border border-gray-100 p-7 sm:p-8 hover:border-gold transition duration-300">
+
+                        <div class="w-14 h-14 bg-cream flex items-center justify-center mb-7">
+                            <i class="bi bi-geo-alt text-gold text-2xl"></i>
+                        </div>
+
+                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                            Visit Us
+                        </span>
+
+                        <h3 class="font-display text-2xl text-forest mt-3 mb-4">
+                            Our Location
+                        </h3>
+
+                        <p class="text-muted text-sm leading-7">
+                            Regal Hetauda Resort<br>
+                            Hetauda, Bagmati Province<br>
+                            Nepal
+                        </p>
+
+                        <a href="#location"
+                        class="inline-flex items-center gap-2 text-forest hover:text-gold text-xs font-bold mt-6 transition">
+                            View Location
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="bg-white border border-gray-100 p-7 sm:p-8 hover:border-gold transition duration-300">
+
+                        <div class="w-14 h-14 bg-cream flex items-center justify-center mb-7">
+                            <i class="bi bi-telephone text-gold text-2xl"></i>
+                        </div>
+
+                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                            Call Us
+                        </span>
+
+                        <h3 class="font-display text-2xl text-forest mt-3 mb-4">
+                            Phone
+                        </h3>
+
+                        <!-- Replace with verified resort phone number -->
+                        <p class="text-muted text-sm leading-7">
+                            Contact our reception team for enquiries and reservations.
+                        </p>
+
+                        <a href="tel:+9779855071256"
+                        class="inline-flex items-center gap-2 text-forest hover:text-gold text-xs font-bold mt-6 transition">
+                            +977 9855071256
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="bg-white border border-gray-100 p-7 sm:p-8 hover:border-gold transition duration-300">
+
+                        <div class="w-14 h-14 bg-cream flex items-center justify-center mb-7">
+                            <i class="bi bi-envelope text-gold text-2xl"></i>
+                        </div>
+
+                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                            Write to Us
+                        </span>
+
+                        <h3 class="font-display text-2xl text-forest mt-3 mb-4">
+                            Email
+                        </h3>
+
+                        <p class="text-muted text-sm leading-7">
+                            Send us your questions, requests or booking enquiries.
+                        </p>
+
+                        <!-- Replace with verified resort email -->
+                        <a href="mailto:info@yourresortdomain.com"
+                        class="inline-flex items-center gap-2 text-forest hover:text-gold text-xs font-bold mt-6 break-all transition">
+                            Email the Resort
+                            <i class="bi bi-arrow-up-right shrink-0"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Reservation -->
+                    <div class="bg-forest text-white p-7 sm:p-8">
+
+                        <div class="w-14 h-14 bg-white/10 flex items-center justify-center mb-7">
+                            <i class="bi bi-calendar-check text-gold text-2xl"></i>
+                        </div>
+
+                        <span class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                            Plan Your Stay
+                        </span>
+
+                        <h3 class="font-display text-2xl text-white mt-3 mb-4">
+                            Reservations
+                        </h3>
+
+                        <p class="text-white/70 text-sm leading-7">
+                            Planning your next escape? Send a reservation enquiry.
+                        </p>
+
+                        <a href="reserve.html"
+                        class="inline-flex items-center gap-2 text-gold hover:text-white text-xs font-bold mt-6 transition">
+                            Reserve Your Stay
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT FORM ================= -->
+        <section class="bg-white py-20 md:py-28">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="lg:col-span-2">
+
+                        <span class="section-eyebrow">Send an Enquiry</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-[56px] leading-tight mt-6 mb-7">
+                            Let's Start a<br>
+                            <em class="text-gold">Conversation.</em>
+                        </h2>
+
+                        <p class="text-muted text-sm sm:text-base leading-8 mb-9">
+                            Tell us a little about your enquiry and we'll be happy to assist. Whether it's about rooms, dining, celebrations or general information, you can use the form to get in touch.
+                        </p>
+
+                        <div class="relative overflow-hidden">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=850&q=85"
+                                alt="Elegant resort exterior"
+                                loading="lazy"
+                                class="w-full h-[300px] sm:h-[400px] object-cover"
+                            >
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-deep/80 via-transparent to-transparent"></div>
+
+                            <div class="absolute bottom-7 left-7 right-7">
+
+                                <i class="bi bi-heart text-gold text-2xl"></i>
+
+                                <p class="font-display text-white text-2xl sm:text-3xl mt-3">
+                                    Hospitality Begins<br>
+                                    with a Hello.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT FORM -->
+                    <div class="lg:col-span-3">
+
+                        <div class="bg-cream p-6 sm:p-9 lg:p-12 border-t-4 border-gold">
+
+                            <div class="mb-9">
+
+                                <h3 class="font-display text-3xl sm:text-4xl text-forest">
+                                    Send Us a Message
+                                </h3>
+
+                                <p class="text-muted text-sm leading-7 mt-3">
+                                    Complete the form below to prepare your enquiry.
+                                </p>
+
+                            </div>
+
+                            <form id="contactForm" class="space-y-6">
+
+                                <!-- Name -->
+                                <div class="grid sm:grid-cols-2 gap-6">
+
+                                    <div>
+                                        <label for="firstName" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            First Name <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="firstName"
+                                            name="firstName"
+                                            required
+                                            autocomplete="given-name"
+                                            placeholder="Your first name"
+                                            class="w-full bg-white border border-gray-200 px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                    <div>
+                                        <label for="lastName" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Last Name <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="lastName"
+                                            name="lastName"
+                                            required
+                                            autocomplete="family-name"
+                                            placeholder="Your last name"
+                                            class="w-full bg-white border border-gray-200 px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Email & Phone -->
+                                <div class="grid sm:grid-cols-2 gap-6">
+
+                                    <div>
+                                        <label for="contactEmail" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Email Address <span class="text-red-500">*</span>
+                                        </label>
+
+                                        <input
+                                            type="email"
+                                            id="contactEmail"
+                                            name="email"
+                                            required
+                                            autocomplete="email"
+                                            placeholder="you@example.com"
+                                            class="w-full bg-white border border-gray-200 px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                    <div>
+                                        <label for="contactPhone" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                            Phone Number
+                                        </label>
+
+                                        <input
+                                            type="tel"
+                                            id="contactPhone"
+                                            name="phone"
+                                            autocomplete="tel"
+                                            placeholder="+977 98XXXXXXXX"
+                                            class="w-full bg-white border border-gray-200 px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition"
+                                        >
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Subject -->
+                                <div>
+                                    <label for="contactSubject" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                        Enquiry Type <span class="text-red-500">*</span>
+                                    </label>
+
+                                    <select
+                                        id="contactSubject"
+                                        name="subject"
+                                        required
+                                        class="w-full bg-white border border-gray-200 px-4 py-4 text-sm text-forest outline-none focus:border-gold transition"
+                                    >
+                                        <option value="" disabled selected>Select enquiry type</option>
+                                        <option value="room">Room & Accommodation</option>
+                                        <option value="reservation">Reservation Enquiry</option>
+                                        <option value="dining">Dining Enquiry</option>
+                                        <option value="event">Events & Celebrations</option>
+                                        <option value="general">General Enquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- Message -->
+                                <div>
+                                    <label for="contactMessage" class="block text-[11px] font-bold uppercase tracking-widest text-forest mb-3">
+                                        Your Message <span class="text-red-500">*</span>
+                                    </label>
+
+                                    <textarea
+                                        id="contactMessage"
+                                        name="message"
+                                        rows="6"
+                                        required
+                                        minlength="10"
+                                        placeholder="Tell us how we can help you..."
+                                        class="w-full bg-white border border-gray-200 px-4 py-4 text-sm text-forest placeholder:text-gray-400 outline-none focus:border-gold transition resize-y"
+                                    ></textarea>
+                                </div>
+
+
+                                <!-- Consent -->
+                                <div class="flex items-start gap-3">
+
+                                    <input
+                                        type="checkbox"
+                                        id="contactConsent"
+                                        name="consent"
+                                        required
+                                        class="mt-1 w-4 h-4 accent-[#173B32] shrink-0"
+                                    >
+
+                                    <label for="contactConsent" class="text-muted text-xs leading-6">
+                                        I agree to share my details with Regal Hetauda Resort for the purpose of responding to this enquiry.
+                                    </label>
+
+                                </div>
+
+
+                                <!-- Submit -->
+                                <button
+                                    type="submit"
+                                    class="w-full sm:w-auto inline-flex items-center justify-center gap-5 bg-forest hover:bg-gold text-white hover:text-deep px-10 py-5 text-xs font-bold uppercase tracking-widest transition"
+                                >
+                                    Prepare Message
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </button>
+
+                                <!-- Status -->
+                                <p id="contactStatus" role="status" aria-live="polite" class="hidden text-sm leading-7"></p>
+
+                                <p class="text-muted text-xs leading-6">
+                                    This form currently prepares an email in your email application. It does not send messages directly from the website.
+                                </p>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOCATION & MAP ================= -->
+        <section id="location" class="bg-cream py-20 md:py-28">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-12">
+
+                    <div>
+                        <span class="section-eyebrow">Find Your Way</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-[58px] leading-tight mt-6">
+                            Find Us in<br>
+                            <em class="text-gold">Hetauda.</em>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <p class="text-muted text-sm sm:text-base leading-8">
+                            Located in Hetauda, Nepal, Regal Hetauda Resort welcomes guests seeking a memorable hospitality experience. Use the map below to find the resort and plan your visit.
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Regal%20Hetauda%20Resort"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-4 text-forest hover:text-gold text-xs font-bold uppercase tracking-widest mt-6 transition"
+                        >
+                            Open in Google Maps
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Google Map -->
+                <div class="relative w-full h-[350px] sm:h-[450px] lg:h-[550px] overflow-hidden border-[6px] border-white shadow-lg">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2060.7728091087956!2d85.04882347704324!3d27.41679108700894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb49a739c86657%3A0x68baff2f327f5863!2sRegal%20Hetauda%20Resort!5e0!3m2!1sen!2snp!4v1794993056689!5m2!1sen!2snp"
+                        title="Regal Hetauda Resort location"
+                        class="w-full h-full border-0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+        <section class="bg-white py-20 md:py-28">
+
+            <div class="max-w-5xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="text-center max-w-2xl mx-auto mb-12">
+
+                    <span class="section-eyebrow">Helpful Information</span>
+
+                    <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-5">
+                        Frequently Asked<br>
+                        <em class="text-gold">Questions.</em>
+                    </h2>
+
+                    <p class="text-muted text-sm leading-8 mt-6">
+                        Here are a few helpful answers before you get in touch.
+                    </p>
+
+                </div>
+
+
+                <div class="space-y-4">
+
+                    <!-- FAQ 1 -->
+                    <details class="group border border-gray-200 bg-cream p-5 sm:p-7">
+                        <summary class="flex items-center justify-between gap-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="font-display text-lg sm:text-xl text-forest">
+                                How can I enquire about a room reservation?
+                            </span>
+
+                            <i class="bi bi-plus-lg text-gold group-open:rotate-45 transition-transform"></i>
+                        </summary>
+
+                        <p class="text-muted text-sm leading-8 mt-5 pr-6">
+                            Visit our Reservations page to select your preferred dates and provide your details. Our team can then confirm availability and booking arrangements.
+                        </p>
+                    </details>
+
+
+                    <!-- FAQ 2 -->
+                    <details class="group border border-gray-200 bg-cream p-5 sm:p-7">
+                        <summary class="flex items-center justify-between gap-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="font-display text-lg sm:text-xl text-forest">
+                                Can I enquire about dining arrangements?
+                            </span>
+
+                            <i class="bi bi-plus-lg text-gold group-open:rotate-45 transition-transform"></i>
+                        </summary>
+
+                        <p class="text-muted text-sm leading-8 mt-5 pr-6">
+                            Yes. Use the contact form and select Dining Enquiry to ask about current dining options, menus or group arrangements.
+                        </p>
+                    </details>
+
+
+                    <!-- FAQ 3 -->
+                    <details class="group border border-gray-200 bg-cream p-5 sm:p-7">
+                        <summary class="flex items-center justify-between gap-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="font-display text-lg sm:text-xl text-forest">
+                                Can I discuss a special event or celebration?
+                            </span>
+
+                            <i class="bi bi-plus-lg text-gold group-open:rotate-45 transition-transform"></i>
+                        </summary>
+
+                        <p class="text-muted text-sm leading-8 mt-5 pr-6">
+                            You can contact the resort to discuss your plans and ask which arrangements may be available for your event.
+                        </p>
+                    </details>
+
+
+                    <!-- FAQ 4 -->
+                    <details class="group border border-gray-200 bg-cream p-5 sm:p-7">
+                        <summary class="flex items-center justify-between gap-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="font-display text-lg sm:text-xl text-forest">
+                                Where is Regal Hetauda Resort located?
+                            </span>
+
+                            <i class="bi bi-plus-lg text-gold group-open:rotate-45 transition-transform"></i>
+                        </summary>
+
+                        <p class="text-muted text-sm leading-8 mt-5 pr-6">
+                            Regal Hetauda Resort is in Hetauda, Bagmati Province, Nepal. You can use the Google Map above for directions.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL CTA ================= -->
+        <section class="relative bg-forest text-white py-20 md:py-28 overflow-hidden">
+
+            <div class="absolute inset-0 opacity-15">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80"
+                    alt=""
+                    loading="lazy"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 text-center">
+
+                <span class="text-gold text-[11px] uppercase tracking-[3px] font-bold">
+                    Your Next Stay Awaits
+                </span>
+
+                <h2 class="font-display text-4xl sm:text-5xl lg:text-7xl leading-tight mt-6 mb-7">
+                    Your Regal Experience<br>
+                    <em class="text-gold">Starts Here.</em>
+                </h2>
+
+                <p class="text-white/75 text-sm sm:text-base leading-8 max-w-2xl mx-auto mb-10">
+                    Ready to plan your visit? Explore our accommodation and send a reservation enquiry.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+                    <a href="reserve.html"
+                    class="inline-flex items-center justify-center gap-5 bg-gold hover:bg-white text-deep px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Make a Reservation
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a href="rooms.html"
+                    class="inline-flex items-center justify-center gap-5 border border-white/50 hover:bg-white hover:text-deep text-white px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Explore Rooms
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-[#0B241E] text-white pt-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16">
+
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-3 mb-7">
+                        <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">R</span>
+                        <span class="flex flex-col">
+                            <span class="font-display text-2xl leading-none">REGAL</span>
+                            <span class="text-gold text-[8px] tracking-[3px] uppercase mt-1">Hetauda Resort</span>
+                        </span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-8">
+                        Refined comfort, thoughtful hospitality and meaningful moments in Hetauda, Nepal.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Explore</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                        <li><a href="rooms.html" class="hover:text-gold transition">Rooms & Suites</a></li>
+                        <li><a href="dining.html" class="hover:text-gold transition">Dining</a></li>
+                        <li><a href="story.html" class="hover:text-gold transition">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Guest Information</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="reserve.html" class="hover:text-gold transition">Reservations</a></li>
+                        <li><a href="contact.html" class="hover:text-gold transition">Contact Us</a></li>
+                        <li><a href="#gallery" class="hover:text-gold transition">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Get in Touch</h3>
+                    <div class="space-y-5 text-sm text-white/60">
+                        <p class="flex gap-3">
+                            <i class="bi bi-geo-alt text-gold"></i>
+                            <span>Piple-05, Hetauda, Nepal</span>
+                        </p>
+                        <a href="tel:+9779855071256" class="flex gap-3 hover:text-gold transition">
+                            <i class="bi bi-telephone text-gold"></i>
+                            +977 9855071256
+                        </a>
+                        <a href="mailto:info@regalheaudaresort.com" class="flex gap-3 break-all hover:text-gold transition">
+                            <i class="bi bi-envelope text-gold"></i>
+                            info@regalheaudaresort.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 py-7 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50 text-center">
+                <p>&copy; <span id="year"></span> Regal Hetauda Resort. All Rights Reserved.</p>
+                <p>Hetauda, Nepal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top"
+            class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-gold text-deep shadow-lg hidden items-center justify-center hover:bg-forest hover:text-white transition">
+        <i class="bi bi-arrow-up text-xl"></i>
+    </button>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

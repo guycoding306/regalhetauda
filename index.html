@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience refined hospitality at Regal Hetauda Resort in Hetauda, Nepal. Explore rooms, dining and memorable stays.">
+    <title>Regal Hetauda Resort | A Refined Escape</title>
+
+    <!-- Tailwind CSS (development CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Custom Tailwind Configuration -->
+    <script src="js/tailwind.config.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body class="bg-cream text-deep overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+    <header id="mainNavbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-deep/70 lg:bg-transparent">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="flex items-center justify-between h-20 lg:h-24">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 shrink-0 relative z-50">
+                    <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">
+                        R
+                    </span>
+                    <span class="flex flex-col">
+                        <span class="font-display text-white text-2xl leading-none tracking-wide">REGAL</span>
+                        <span class="text-gold text-[8px] sm:text-[9px] uppercase tracking-[3px] mt-1">Hetauda Resort</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 xl:gap-9">
+                    <a href="index.html" class="text-gold text-xs uppercase tracking-widest font-semibold">Home</a>
+                    <a href="rooms.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Rooms</a>
+                    <a href="dining.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Dining</a>
+                    <a href="story.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Our Story</a>
+                    <a href="contact.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <a href="reserve.html" class="hidden lg:inline-flex items-center gap-3 bg-gold hover:bg-white text-deep px-6 py-4 text-[11px] font-bold uppercase tracking-widest transition duration-300">
+                    Reserve Your Stay
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <!-- Mobile Hamburger -->
+                <button id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu"
+                        class="lg:hidden relative z-50 w-11 h-11 border border-gold/70 flex flex-col items-center justify-center gap-[5px] text-white">
+                    <span id="line1" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line2" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line3" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobileMenu" class="hidden lg:hidden bg-deep border-t border-white/10">
+            <div class="px-6 py-6 flex flex-col gap-1 max-h-[calc(100dvh-80px)] overflow-y-auto">
+                <a href="index.html" class="mobile-link text-gold py-3 border-b border-white/10 text-sm uppercase tracking-widest">Home</a>
+                <a href="rooms.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Rooms & Suites</a>
+                <a href="dining.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Dining</a>
+                <a href="story.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Our Story</a>
+                <a href="contact.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Contact</a>
+                <a href="reserve.html" class="mobile-link mt-5 bg-gold text-deep text-center py-4 text-xs font-bold uppercase tracking-widest">
+                    Reserve Your Stay
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero-bg relative min-h-[720px] lg:min-h-[820px] flex items-center pt-28 pb-32 md:pb-36">
+        <div class="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-10 relative z-10">
+            <div class="max-w-4xl">
+
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="w-9 h-px bg-gold"></span>
+                    <span class="text-gold text-[10px] sm:text-xs font-bold tracking-[3px] uppercase">
+                        Welcome to Regal Hetauda Resort
+                    </span>
+                </div>
+
+                <h1 class="font-display text-white text-[46px] leading-[1.12] sm:text-6xl md:text-7xl lg:text-[90px] lg:leading-[1.08] tracking-tight">
+                    Where Every<br>
+                    Moment Feels<br>
+                    <em class="text-gold font-normal">Extraordinary.</em>
+                </h1>
+
+                <p class="mt-7 mb-9 text-white/80 max-w-xl text-sm sm:text-base leading-8">
+                    An invitation to slow down, reconnect and experience the beauty of refined hospitality in the heart of Hetauda.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="rooms.html" class="inline-flex items-center justify-center gap-8 bg-gold hover:bg-white text-deep px-8 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Explore Our Stays
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                    <a href="story.html" class="inline-flex items-center justify-center gap-8 border border-white/60 text-white hover:bg-white hover:text-deep px-8 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Discover Regal
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-16 left-5 sm:left-8 lg:left-10 flex items-center gap-3 text-white/80">
+            <i class="bi bi-arrow-down-circle text-gold text-xl"></i>
+            <span class="text-[10px] tracking-[2px] uppercase font-bold">Scroll to Discover</span>
+        </div>
+
+        <div class="hidden xl:block absolute right-10 top-1/2 -translate-y-1/2 text-white/70 text-[10px] tracking-[5px] uppercase [writing-mode:vertical-rl]">
+            A Distinctive Resort Experience — Hetauda, Nepal
+        </div>
+    </section>
+
+    <!-- ================= BOOKING BAR ================= -->
+    <section class="relative z-20 -mt-10 md:-mt-14 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto bg-white shadow-2xl shadow-deep/10 p-5 sm:p-7 lg:p-5">
+            <form id="bookingForm" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 lg:items-center">
+
+                <div class="lg:px-6 lg:border-r border-gray-200">
+                    <label for="checkin" class="block text-[10px] font-bold tracking-[2px] uppercase text-muted mb-3">
+                        <i class="bi bi-calendar3 text-gold mr-2"></i> Check In
+                    </label>
+                    <input id="checkin" type="date" required class="input-style min-h-9">
+                </div>
+
+                <div class="lg:px-6 lg:border-r border-gray-200">
+                    <label for="checkout" class="block text-[10px] font-bold tracking-[2px] uppercase text-muted mb-3">
+                        <i class="bi bi-calendar3 text-gold mr-2"></i> Check Out
+                    </label>
+                    <input id="checkout" type="date" required class="input-style min-h-9">
+                </div>
+
+                <div class="lg:px-6">
+                    <label for="guests" class="block text-[10px] font-bold tracking-[2px] uppercase text-muted mb-3">
+                        <i class="bi bi-people text-gold mr-2"></i> Guests
+                    </label>
+                    <select id="guests" class="input-style min-h-9">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="bg-forest hover:bg-gold text-white hover:text-deep transition min-h-16 px-5 text-[11px] font-bold tracking-widest uppercase flex items-center justify-center gap-3">
+                    Enquire About Stay
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================= OUR STORY ================= -->
+    <section class="py-20 md:py-28 lg:py-36">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+                <div class="relative pb-12 pr-10 sm:pr-16">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=85"
+                         alt="Elegant resort pool and outdoor relaxation area"
+                         loading="lazy"
+                         class="w-full h-[350px] sm:h-[480px] lg:h-[570px] object-cover">
+
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=550&q=85"
+                         alt="Comfortable resort room interior"
+                         loading="lazy"
+                         class="absolute bottom-0 right-0 w-[42%] h-[180px] sm:h-[240px] lg:h-[280px] object-cover border-[6px] sm:border-[10px] border-cream">
+
+                    <div class="absolute top-8 left-[-8px] sm:left-[-18px] bg-forest text-white px-5 py-6 hidden sm:block">
+                        <span class="font-display text-3xl text-gold">Regal</span>
+                        <p class="text-[9px] uppercase tracking-widest mt-1">A Place to Unwind</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="section-eyebrow">The Regal Story</span>
+                    <h2 class="font-display text-4xl sm:text-5xl lg:text-[58px] leading-tight mt-6 mb-7">
+                        More Than a Stay.<br>
+                        <em class="text-gold">A Feeling.</em>
+                    </h2>
+
+                    <p class="text-muted text-sm sm:text-base leading-8 mb-5">
+                        Nestled in Hetauda, Regal Hetauda Resort welcomes guests to discover a thoughtful balance of comfort, elegance and warm Nepali hospitality.
+                    </p>
+
+                    <p class="text-muted text-sm sm:text-base leading-8 mb-9">
+                        Whether you're planning a peaceful weekend, a special celebration or a memorable family getaway, we invite you to make every moment meaningful.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 border-t border-gray-200 pt-8 mb-10">
+                        <div>
+                            <i class="bi bi-flower1 text-gold text-2xl"></i>
+                            <h3 class="font-display text-xl mt-3 mb-2">Thoughtful Comfort</h3>
+                            <p class="text-muted text-xs leading-6">A relaxing environment designed for memorable stays.</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-heart text-gold text-2xl"></i>
+                            <h3 class="font-display text-xl mt-3 mb-2">Warm Hospitality</h3>
+                            <p class="text-muted text-xs leading-6">An experience centred on care and genuine welcome.</p>
+                        </div>
+                    </div>
+
+                    <a href="story.html" class="inline-flex items-center gap-5 text-forest text-xs font-bold uppercase tracking-widest border-b border-gold pb-3 hover:text-gold transition">
+                        Discover Our Story
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ROOMS ================= -->
+    <section id="rooms" class="bg-white py-20 md:py-28">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-7 mb-12">
+                <div>
+                    <span class="section-eyebrow">Stay in Style</span>
+                    <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl mt-5">
+                        Rooms & <em class="text-gold">Suites.</em>
+                    </h2>
+                    <p class="text-muted max-w-xl text-sm leading-7 mt-5">
+                        Discover inviting spaces created for restful nights and relaxing escapes.
+                    </p>
+                </div>
+                <a href="rooms.html" class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-forest hover:text-gold transition">
+                    View All Rooms <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                <!-- Room 1 -->
+                <article class="group bg-cream">
+                    <a href="room-details.html?room=deluxe" class="block image-zoom overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                             alt="Deluxe Retreat bedroom"
+                             loading="lazy"
+                             class="w-full h-72 sm:h-80 lg:h-72 object-cover">
+                        <span class="absolute top-5 left-5 bg-white text-forest px-4 py-2 text-[10px] uppercase tracking-widest font-bold">
+                            Refined Comfort
+                        </span>
+                    </a>
+                    <div class="p-7">
+                        <span class="text-gold text-[10px] font-bold tracking-[2px] uppercase">Elegant Accommodation</span>
+                        <h3 class="font-display text-3xl mt-3 mb-4">Deluxe Retreat</h3>
+                        <p class="text-muted text-sm leading-7 mb-6">
+                            A welcoming room concept offering comfort and a peaceful atmosphere.
+                        </p>
+                        <div class="flex flex-wrap gap-4 text-xs text-muted border-b border-gray-200 pb-6">
+                            <span><i class="bi bi-wifi text-gold mr-1"></i> Wi-Fi</span>
+                            <span><i class="bi bi-snow text-gold mr-1"></i> Air Conditioning</span>
+                        </div>
+                        <a href="room-details.html?room=deluxe" class="flex items-center justify-between text-forest font-bold text-xs uppercase tracking-widest mt-6 hover:text-gold transition">
+                            Explore Room <i class="bi bi-arrow-up-right text-lg"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Room 2 -->
+                <article class="group bg-cream">
+                    <a href="room-details.html?room=executive" class="block image-zoom overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=85"
+                             alt="Executive Suite bedroom"
+                             loading="lazy"
+                             class="w-full h-72 sm:h-80 lg:h-72 object-cover">
+                        <span class="absolute top-5 left-5 bg-forest text-white px-4 py-2 text-[10px] uppercase tracking-widest font-bold">
+                            Elevated Stay
+                        </span>
+                    </a>
+                    <div class="p-7">
+                        <span class="text-gold text-[10px] font-bold tracking-[2px] uppercase">Modern Elegance</span>
+                        <h3 class="font-display text-3xl mt-3 mb-4">Executive Suite</h3>
+                        <p class="text-muted text-sm leading-7 mb-6">
+                            A spacious suite concept for guests seeking additional comfort.
+                        </p>
+                        <div class="flex flex-wrap gap-4 text-xs text-muted border-b border-gray-200 pb-6">
+                            <span><i class="bi bi-wifi text-gold mr-1"></i> Wi-Fi</span>
+                            <span><i class="bi bi-cup-hot text-gold mr-1"></i> Refreshments</span>
+                        </div>
+                        <a href="room-details.html?room=executive" class="flex items-center justify-between text-forest font-bold text-xs uppercase tracking-widest mt-6 hover:text-gold transition">
+                            Explore Room <i class="bi bi-arrow-up-right text-lg"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Room 3 -->
+                <article class="group bg-cream md:col-span-2 lg:col-span-1">
+                    <a href="room-details.html?room=signature" class="block image-zoom overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85"
+                             alt="Regal Signature Suite bedroom"
+                             loading="lazy"
+                             class="w-full h-72 sm:h-80 lg:h-72 object-cover">
+                        <span class="absolute top-5 left-5 bg-white text-forest px-4 py-2 text-[10px] uppercase tracking-widest font-bold">
+                            Signature Collection
+                        </span>
+                    </a>
+                    <div class="p-7">
+                        <span class="text-gold text-[10px] font-bold tracking-[2px] uppercase">The Finest Experience</span>
+                        <h3 class="font-display text-3xl mt-3 mb-4">Regal Signature Suite</h3>
+                        <p class="text-muted text-sm leading-7 mb-6">
+                            An elevated accommodation concept for a distinctive getaway.
+                        </p>
+                        <div class="flex flex-wrap gap-4 text-xs text-muted border-b border-gray-200 pb-6">
+                            <span><i class="bi bi-wifi text-gold mr-1"></i> Wi-Fi</span>
+                            <span><i class="bi bi-stars text-gold mr-1"></i> Premium Comfort</span>
+                        </div>
+                        <a href="room-details.html?room=signature" class="flex items-center justify-between text-forest font-bold text-xs uppercase tracking-widest mt-6 hover:text-gold transition">
+                            Explore Room <i class="bi bi-arrow-up-right text-lg"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCES ================= -->
+    <section id="experiences" class="py-20 md:py-28 bg-cream">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="section-eyebrow">Beyond Accommodation</span>
+                <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl mt-5">
+                    Moments to <em class="text-gold">Treasure.</em>
+                </h2>
+                <p class="text-muted text-sm leading-8 mt-6">
+                    Discover ways to relax, connect and celebrate during your stay.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="group relative h-[390px] sm:h-[440px] overflow-hidden image-zoom">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=85"
+                         alt="Resort swimming pool"
+                         loading="lazy"
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 gallery-overlay"></div>
+                    <div class="absolute bottom-8 left-7 right-7 text-white">
+                        <span class="text-gold text-[10px] uppercase tracking-[3px]">01 / Unwind</span>
+                        <h3 class="font-display text-3xl mt-3">Relax & Rejuvenate</h3>
+                        <p class="text-white/75 text-sm mt-3">Enjoy moments of calm in an inviting resort setting.</p>
+                    </div>
+                </div>
+
+                <div class="group relative h-[390px] sm:h-[440px] overflow-hidden image-zoom">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85"
+                         alt="Elegant celebration venue"
+                         loading="lazy"
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 gallery-overlay"></div>
+                    <div class="absolute bottom-8 left-7 right-7 text-white">
+                        <span class="text-gold text-[10px] uppercase tracking-[3px]">02 / Celebrate</span>
+                        <h3 class="font-display text-3xl mt-3">Special Occasions</h3>
+                        <p class="text-white/75 text-sm mt-3">Create meaningful memories with the people who matter.</p>
+                    </div>
+                </div>
+
+                <div class="group relative h-[390px] sm:h-[440px] overflow-hidden image-zoom md:col-span-2 lg:col-span-1">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
+                         alt="Restaurant dining ambience"
+                         loading="lazy"
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 gallery-overlay"></div>
+                    <div class="absolute bottom-8 left-7 right-7 text-white">
+                        <span class="text-gold text-[10px] uppercase tracking-[3px]">03 / Savour</span>
+                        <h3 class="font-display text-3xl mt-3">Dining Moments</h3>
+                        <p class="text-white/75 text-sm mt-3">Explore flavours and shared moments around the table.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DINING ================= -->
+    <section class="bg-deep text-white py-20 md:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                <div class="order-2 lg:order-1">
+                    <span class="section-eyebrow">A Taste of Regal</span>
+                    <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-6 mb-7">
+                        A Celebration<br>
+                        of <em class="text-gold">Flavour.</em>
+                    </h2>
+
+                    <p class="text-white/70 text-sm sm:text-base leading-8 mb-5">
+                        From relaxed meals to memorable evenings, discover a dining experience inspired by warmth, atmosphere and the pleasure of sharing good food.
+                    </p>
+
+                    <p class="text-white/70 text-sm leading-8 mb-9">
+                        Explore our dining concepts and plan a memorable culinary experience during your visit.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 border-t border-white/15 pt-7 mb-10">
+                        <div>
+                            <i class="bi bi-cup-hot text-gold text-2xl"></i>
+                            <h3 class="font-display text-xl mt-3">Relaxed Dining</h3>
+                        </div>
+                        <div>
+                            <i class="bi bi-stars text-gold text-2xl"></i>
+                            <h3 class="font-display text-xl mt-3">Memorable Evenings</h3>
+                        </div>
+                    </div>
+
+                    <a href="dining.html" class="inline-flex items-center gap-5 bg-gold hover:bg-white text-deep px-8 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Explore Dining <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <div class="relative order-1 lg:order-2 pb-10 pl-6 sm:pl-10">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1100&q=85"
+                         alt="Elegant restaurant dining setup"
+                         loading="lazy"
+                         class="w-full h-[360px] sm:h-[480px] lg:h-[560px] object-cover">
+
+                    <div class="absolute bottom-0 left-0 bg-gold text-deep px-6 sm:px-9 py-6 sm:py-8">
+                        <i class="bi bi-cup-hot text-3xl"></i>
+                        <p class="font-display text-xl sm:text-2xl mt-3">Savour the Moment</p>
+                        <span class="text-[10px] uppercase tracking-[2px] mt-2 block">The Regal Dining Experience</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+            <div class="text-center mb-12">
+                <span class="section-eyebrow">Visual Inspiration</span>
+                <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl mt-5">
+                    A Glimpse of <em class="text-gold">Regal.</em>
+                </h2>
+                <p class="text-muted text-sm leading-7 mt-5">Explore the atmosphere behind our hospitality vision.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
+                <div class="image-zoom overflow-hidden row-span-2">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=85"
+                         alt="Resort swimming pool"
+                         loading="lazy"
+                         class="w-full h-full min-h-[320px] md:min-h-[480px] object-cover">
+                </div>
+
+                <div class="image-zoom overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=700&q=85"
+                         alt="Guest room interior"
+                         loading="lazy"
+                         class="w-full h-40 sm:h-56 object-cover">
+                </div>
+
+                <div class="image-zoom overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85"
+                         alt="Fine dining table"
+                         loading="lazy"
+                         class="w-full h-40 sm:h-56 object-cover">
+                </div>
+
+                <div class="image-zoom overflow-hidden row-span-2">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=85"
+                         alt="Resort exterior inspiration"
+                         loading="lazy"
+                         class="w-full h-full min-h-[320px] md:min-h-[480px] object-cover">
+                </div>
+
+                <div class="image-zoom overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=85"
+                         alt="Event venue"
+                         loading="lazy"
+                         class="w-full h-40 sm:h-56 object-cover">
+                </div>
+
+                <div class="image-zoom overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=700&q=85"
+                         alt="Suite accommodation"
+                         loading="lazy"
+                         class="w-full h-40 sm:h-56 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="relative bg-forest py-20 md:py-28 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+             style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=70');background-size:cover;background-position:center;"></div>
+
+        <div class="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+            <span class="text-gold text-[11px] uppercase font-bold tracking-[3px]">Your Escape Awaits</span>
+            <h2 class="font-display text-4xl sm:text-5xl lg:text-7xl leading-tight mt-6 mb-7">
+                Make Your Next Stay<br>
+                <em class="text-gold">Extraordinary.</em>
+            </h2>
+            <p class="text-white/75 max-w-xl mx-auto text-sm sm:text-base leading-8 mb-10">
+                Your next memorable experience begins with a simple enquiry.
+            </p>
+            <a href="reserve.html" class="inline-flex items-center justify-center gap-6 bg-gold hover:bg-white text-deep px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                Reserve Your Stay <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-[#0B241E] text-white pt-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16">
+
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-3 mb-7">
+                        <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">R</span>
+                        <span class="flex flex-col">
+                            <span class="font-display text-2xl leading-none">REGAL</span>
+                            <span class="text-gold text-[8px] tracking-[3px] uppercase mt-1">Hetauda Resort</span>
+                        </span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-8">
+                        Refined comfort, thoughtful hospitality and meaningful moments in Hetauda, Nepal.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Explore</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                        <li><a href="rooms.html" class="hover:text-gold transition">Rooms & Suites</a></li>
+                        <li><a href="dining.html" class="hover:text-gold transition">Dining</a></li>
+                        <li><a href="story.html" class="hover:text-gold transition">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Guest Information</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="reserve.html" class="hover:text-gold transition">Reservations</a></li>
+                        <li><a href="contact.html" class="hover:text-gold transition">Contact Us</a></li>
+                        <li><a href="#gallery" class="hover:text-gold transition">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Get in Touch</h3>
+                    <div class="space-y-5 text-sm text-white/60">
+                        <p class="flex gap-3">
+                            <i class="bi bi-geo-alt text-gold"></i>
+                            <span>Piple-05, Hetauda, Nepal</span>
+                        </p>
+                        <a href="tel:+9779855071256" class="flex gap-3 hover:text-gold transition">
+                            <i class="bi bi-telephone text-gold"></i>
+                            +977 9855071256
+                        </a>
+                        <a href="mailto:info@regalheaudaresort.com" class="flex gap-3 break-all hover:text-gold transition">
+                            <i class="bi bi-envelope text-gold"></i>
+                            info@regalheaudaresort.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 py-7 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50 text-center">
+                <p>&copy; <span id="year"></span> Regal Hetauda Resort. All Rights Reserved.</p>
+                <p>Hetauda, Nepal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top"
+            class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-gold text-deep shadow-lg hidden items-center justify-center hover:bg-forest hover:text-white transition">
+        <i class="bi bi-arrow-up text-xl"></i>
+    </button>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

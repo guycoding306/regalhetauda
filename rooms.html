@@ -1,0 +1,711 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience refined hospitality at Regal Hetauda Resort in Hetauda, Nepal. Explore rooms, dining and memorable stays.">
+    <title>Regal Hetauda Resort | A Refined Escape</title>
+
+    <!-- Tailwind CSS (development CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Custom Tailwind Configuration -->
+    <script src="js/tailwind.config.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body class="bg-cream text-deep overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+    <header id="mainNavbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-deep/70 lg:bg-transparent">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="flex items-center justify-between h-20 lg:h-24">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 shrink-0 relative z-50">
+                    <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">
+                        R
+                    </span>
+                    <span class="flex flex-col">
+                        <span class="font-display text-white text-2xl leading-none tracking-wide">REGAL</span>
+                        <span class="text-gold text-[8px] sm:text-[9px] uppercase tracking-[3px] mt-1">Hetauda Resort</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 xl:gap-9">
+                    <a href="index.html" class="text-white text-xs uppercase tracking-widest font-semibold">Home</a>
+                    <a href="rooms.html" class="text-gold hover:text-gold transition text-xs uppercase tracking-widest">Rooms</a>
+                    <a href="dining.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Dining</a>
+                    <a href="story.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Our Story</a>
+                    <a href="contact.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <a href="reserve.html" class="hidden lg:inline-flex items-center gap-3 bg-gold hover:bg-white text-deep px-6 py-4 text-[11px] font-bold uppercase tracking-widest transition duration-300">
+                    Reserve Your Stay
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <!-- Mobile Hamburger -->
+                <button id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu"
+                        class="lg:hidden relative z-50 w-11 h-11 border border-gold/70 flex flex-col items-center justify-center gap-[5px] text-white">
+                    <span id="line1" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line2" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line3" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobileMenu" class="hidden lg:hidden bg-deep border-t border-white/10">
+            <div class="px-6 py-6 flex flex-col gap-1 max-h-[calc(100dvh-80px)] overflow-y-auto">
+                <a href="index.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Home</a>
+                <a href="rooms.html" class="mobile-link text-gold py-3 border-b border-white/10 text-sm uppercase tracking-widest">Rooms & Suites</a>
+                <a href="dining.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Dining</a>
+                <a href="story.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Our Story</a>
+                <a href="contact.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Contact</a>
+                <a href="reserve.html" class="mobile-link mt-5 bg-gold text-deep text-center py-4 text-xs font-bold uppercase tracking-widest">
+                    Reserve Your Stay
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <!-- ==========================================
+        ROOMS & SUITES PAGE
+    ========================================== -->
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="relative min-h-[420px] sm:min-h-[480px] lg:min-h-[550px] flex items-center justify-center overflow-hidden pt-24">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1920&q=85"
+                    alt="Elegant resort bedroom"
+                    class="w-full h-full object-cover"
+                >
+                <div class="absolute inset-0 bg-gradient-to-r from-deep/95 via-deep/75 to-deep/40"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 w-full text-center">
+
+                <div class="flex items-center justify-center gap-4 mb-6">
+                    <span class="w-8 h-px bg-gold"></span>
+                    <span class="text-gold text-[10px] sm:text-xs uppercase tracking-[3px] font-semibold">
+                        The Art of Staying
+                    </span>
+                    <span class="w-8 h-px bg-gold"></span>
+                </div>
+
+                <h1 class="font-display text-white text-5xl sm:text-6xl lg:text-[84px] leading-tight">
+                    Rooms <span class="italic text-gold">&</span> Suites
+                </h1>
+
+                <p class="text-white/75 text-sm sm:text-base leading-8 mt-5 max-w-2xl mx-auto">
+                    Discover thoughtfully designed spaces where comfort,
+                    elegance and relaxation come together.
+                </p>
+
+                <!-- Breadcrumb -->
+                <div class="flex justify-center items-center gap-3 mt-9 text-[11px] uppercase tracking-[2px]">
+                    <a href="index.html" class="text-white/70 hover:text-gold transition">Home</a>
+                    <i class="bi bi-chevron-right text-gold text-[9px]"></i>
+                    <span class="text-gold">Rooms & Suites</span>
+                </div>
+            </div>
+
+            <!-- Decorative Bottom Line -->
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-1 bg-gold"></div>
+        </section>
+
+
+        <!-- ROOMS INTRODUCTION -->
+        <section class="bg-cream py-20 md:py-24 lg:py-28">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+
+                    <div class="max-w-3xl">
+                        <span class="section-eyebrow">Our Accommodation</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-5">
+                            Your Personal Space<br>
+                            to <em class="text-gold">Unwind.</em>
+                        </h2>
+
+                        <p class="text-muted text-sm sm:text-base leading-8 mt-6 max-w-2xl">
+                            From cosy retreats to spacious suites, explore
+                            accommodation options designed to make your visit
+                            to Regal Hetauda Resort memorable.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-4 lg:pb-2">
+                        <div class="w-12 h-12 border border-gold/50 flex items-center justify-center">
+                            <i class="bi bi-stars text-gold text-xl"></i>
+                        </div>
+
+                        <div>
+                            <p class="font-display text-xl text-forest">Stay Beautifully</p>
+                            <p class="text-muted text-xs mt-1">Comfort in Every Detail</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ROOM FILTER BUTTONS -->
+                <div class="flex flex-wrap items-center gap-3 mb-10 md:mb-12" id="roomFilters">
+
+                    <button
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true"
+                        class="room-filter bg-forest text-white px-6 py-3 text-[11px] font-bold uppercase tracking-widest transition">
+                        All Rooms
+                    </button>
+
+                    <button
+                        type="button"
+                        data-filter="deluxe"
+                        aria-pressed="false"
+                        class="room-filter border border-forest/20 text-forest hover:bg-forest hover:text-white px-6 py-3 text-[11px] font-bold uppercase tracking-widest transition">
+                        Deluxe Rooms
+                    </button>
+
+                    <button
+                        type="button"
+                        data-filter="executive"
+                        aria-pressed="false"
+                        class="room-filter border border-forest/20 text-forest hover:bg-forest hover:text-white px-6 py-3 text-[11px] font-bold uppercase tracking-widest transition">
+                        Executive Suites
+                    </button>
+
+                    <button
+                        type="button"
+                        data-filter="signature"
+                        aria-pressed="false"
+                        class="room-filter border border-forest/20 text-forest hover:bg-forest hover:text-white px-6 py-3 text-[11px] font-bold uppercase tracking-widest transition">
+                        Signature Suites
+                    </button>
+                </div>
+
+
+                <!-- ROOM GRID -->
+                <div id="roomsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 lg:gap-8">
+
+                    <!-- ROOM 01 -->
+                    <article data-category="deluxe" class="room-card bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500">
+
+                        <div class="relative h-[260px] sm:h-[310px] overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                                alt="Deluxe Retreat bedroom"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <span class="absolute top-5 left-5 bg-white text-forest px-4 py-2 text-[10px] font-bold uppercase tracking-[2px]">
+                                Deluxe Collection
+                            </span>
+
+                            <div class="absolute bottom-5 right-5 w-11 h-11 bg-gold flex items-center justify-center text-deep">
+                                <i class="bi bi-arrow-up-right text-lg"></i>
+                            </div>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+
+                            <p class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                Comfort & Simplicity
+                            </p>
+
+                            <h3 class="font-display text-3xl text-forest mt-3 mb-4">
+                                Deluxe Retreat
+                            </h3>
+
+                            <p class="text-muted text-sm leading-7 mb-6">
+                                A relaxing room concept with elegant interiors and a welcoming atmosphere.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-4 pb-6 border-b border-gray-100 text-xs text-muted">
+                                <span><i class="bi bi-people text-gold mr-2"></i> 2 Guests</span>
+                                <span><i class="bi bi-wifi text-gold mr-2"></i> Wi-Fi</span>
+                                <span><i class="bi bi-snow text-gold mr-2"></i> Air Conditioning</span>
+                                <span><i class="bi bi-cup-hot text-gold mr-2"></i> Refreshments</span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4 mt-6">
+                                <a href="room-details.html?room=deluxe"
+                                class="text-forest hover:text-gold text-xs font-bold uppercase tracking-widest transition">
+                                    View Details <i class="bi bi-arrow-right ml-2"></i>
+                                </a>
+
+                                <a href="reserve.html?room=deluxe"
+                                class="text-gold hover:text-forest text-xs font-bold uppercase tracking-widest transition">
+                                    Reserve
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ROOM 02 -->
+                    <article data-category="executive" class="room-card bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500">
+
+                        <div class="relative h-[260px] sm:h-[310px] overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=85"
+                                alt="Executive Suite interior"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <span class="absolute top-5 left-5 bg-forest text-white px-4 py-2 text-[10px] font-bold uppercase tracking-[2px]">
+                                Executive Collection
+                            </span>
+
+                            <div class="absolute bottom-5 right-5 w-11 h-11 bg-gold flex items-center justify-center text-deep">
+                                <i class="bi bi-arrow-up-right text-lg"></i>
+                            </div>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+
+                            <p class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                Elevated Comfort
+                            </p>
+
+                            <h3 class="font-display text-3xl text-forest mt-3 mb-4">
+                                Executive Suite
+                            </h3>
+
+                            <p class="text-muted text-sm leading-7 mb-6">
+                                A refined suite concept offering a spacious and comfortable setting.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-4 pb-6 border-b border-gray-100 text-xs text-muted">
+                                <span><i class="bi bi-people text-gold mr-2"></i> 2 Guests</span>
+                                <span><i class="bi bi-wifi text-gold mr-2"></i> Wi-Fi</span>
+                                <span><i class="bi bi-tv text-gold mr-2"></i> Television</span>
+                                <span><i class="bi bi-snow text-gold mr-2"></i> Air Conditioning</span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4 mt-6">
+                                <a href="room-details.html?room=executive"
+                                class="text-forest hover:text-gold text-xs font-bold uppercase tracking-widest transition">
+                                    View Details <i class="bi bi-arrow-right ml-2"></i>
+                                </a>
+
+                                <a href="reserve.html?room=executive"
+                                class="text-gold hover:text-forest text-xs font-bold uppercase tracking-widest transition">
+                                    Reserve
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ROOM 03 -->
+                    <article data-category="signature" class="room-card bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500">
+
+                        <div class="relative h-[260px] sm:h-[310px] overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85"
+                                alt="Regal Signature Suite interior"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <span class="absolute top-5 left-5 bg-gold text-deep px-4 py-2 text-[10px] font-bold uppercase tracking-[2px]">
+                                Signature Collection
+                            </span>
+
+                            <div class="absolute bottom-5 right-5 w-11 h-11 bg-white flex items-center justify-center text-forest">
+                                <i class="bi bi-arrow-up-right text-lg"></i>
+                            </div>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+
+                            <p class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                The Regal Experience
+                            </p>
+
+                            <h3 class="font-display text-3xl text-forest mt-3 mb-4">
+                                Regal Signature Suite
+                            </h3>
+
+                            <p class="text-muted text-sm leading-7 mb-6">
+                                A distinctive suite concept combining elegant styling and premium comfort.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-4 pb-6 border-b border-gray-100 text-xs text-muted">
+                                <span><i class="bi bi-people text-gold mr-2"></i> 2 Guests</span>
+                                <span><i class="bi bi-wifi text-gold mr-2"></i> Wi-Fi</span>
+                                <span><i class="bi bi-stars text-gold mr-2"></i> Premium Comfort</span>
+                                <span><i class="bi bi-snow text-gold mr-2"></i> Air Conditioning</span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4 mt-6">
+                                <a href="room-details.html?room=signature"
+                                class="text-forest hover:text-gold text-xs font-bold uppercase tracking-widest transition">
+                                    View Details <i class="bi bi-arrow-right ml-2"></i>
+                                </a>
+
+                                <a href="reserve.html?room=signature"
+                                class="text-gold hover:text-forest text-xs font-bold uppercase tracking-widest transition">
+                                    Reserve
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ROOM 04 -->
+                    <article data-category="deluxe" class="room-card bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500">
+
+                        <div class="relative h-[260px] sm:h-[310px] overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=85"
+                                alt="Deluxe Twin Room interior"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <span class="absolute top-5 left-5 bg-white text-forest px-4 py-2 text-[10px] font-bold uppercase tracking-[2px]">
+                                Deluxe Collection
+                            </span>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+
+                            <p class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                Relaxed Living
+                            </p>
+
+                            <h3 class="font-display text-3xl text-forest mt-3 mb-4">
+                                Deluxe Twin Room
+                            </h3>
+
+                            <p class="text-muted text-sm leading-7 mb-6">
+                                A practical and comfortable room concept for guests travelling together.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-4 pb-6 border-b border-gray-100 text-xs text-muted">
+                                <span><i class="bi bi-people text-gold mr-2"></i> 2 Guests</span>
+                                <span><i class="bi bi-wifi text-gold mr-2"></i> Wi-Fi</span>
+                                <span><i class="bi bi-snow text-gold mr-2"></i> Air Conditioning</span>
+                                <span><i class="bi bi-tv text-gold mr-2"></i> Television</span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4 mt-6">
+                                <a href="room-details.html?room=deluxe-twin"
+                                class="text-forest hover:text-gold text-xs font-bold uppercase tracking-widest transition">
+                                    View Details <i class="bi bi-arrow-right ml-2"></i>
+                                </a>
+                                <a href="reserve.html?room=deluxe-twin"
+                                class="text-gold hover:text-forest text-xs font-bold uppercase tracking-widest transition">
+                                    Reserve
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ROOM 05 -->
+                    <article data-category="executive" class="room-card bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500">
+
+                        <div class="relative h-[260px] sm:h-[310px] overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=85"
+                                alt="Executive King Room interior"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <span class="absolute top-5 left-5 bg-forest text-white px-4 py-2 text-[10px] font-bold uppercase tracking-[2px]">
+                                Executive Collection
+                            </span>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+
+                            <p class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                Modern Sophistication
+                            </p>
+
+                            <h3 class="font-display text-3xl text-forest mt-3 mb-4">
+                                Executive King Room
+                            </h3>
+
+                            <p class="text-muted text-sm leading-7 mb-6">
+                                A stylish room concept created for restful evenings and relaxed mornings.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-4 pb-6 border-b border-gray-100 text-xs text-muted">
+                                <span><i class="bi bi-people text-gold mr-2"></i> 2 Guests</span>
+                                <span><i class="bi bi-wifi text-gold mr-2"></i> Wi-Fi</span>
+                                <span><i class="bi bi-cup-hot text-gold mr-2"></i> Refreshments</span>
+                                <span><i class="bi bi-snow text-gold mr-2"></i> Air Conditioning</span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4 mt-6">
+                                <a href="room-details.html?room=executive-king"
+                                class="text-forest hover:text-gold text-xs font-bold uppercase tracking-widest transition">
+                                    View Details <i class="bi bi-arrow-right ml-2"></i>
+                                </a>
+                                <a href="reserve.html?room=executive-king"
+                                class="text-gold hover:text-forest text-xs font-bold uppercase tracking-widest transition">
+                                    Reserve
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- ROOM 06 -->
+                    <article data-category="signature" class="room-card bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500">
+
+                        <div class="relative h-[260px] sm:h-[310px] overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=85"
+                                alt="Signature Family Suite interior"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <span class="absolute top-5 left-5 bg-gold text-deep px-4 py-2 text-[10px] font-bold uppercase tracking-[2px]">
+                                Signature Collection
+                            </span>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+
+                            <p class="text-gold text-[10px] uppercase tracking-[2px] font-bold">
+                                Together in Comfort
+                            </p>
+
+                            <h3 class="font-display text-3xl text-forest mt-3 mb-4">
+                                Signature Family Suite
+                            </h3>
+
+                            <p class="text-muted text-sm leading-7 mb-6">
+                                A family-oriented suite concept with space for shared moments.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-4 pb-6 border-b border-gray-100 text-xs text-muted">
+                                <span><i class="bi bi-people text-gold mr-2"></i> Family Stay</span>
+                                <span><i class="bi bi-wifi text-gold mr-2"></i> Wi-Fi</span>
+                                <span><i class="bi bi-tv text-gold mr-2"></i> Television</span>
+                                <span><i class="bi bi-stars text-gold mr-2"></i> Extra Comfort</span>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-4 mt-6">
+                                <a href="room-details.html?room=signature-family"
+                                class="text-forest hover:text-gold text-xs font-bold uppercase tracking-widest transition">
+                                    View Details <i class="bi bi-arrow-right ml-2"></i>
+                                </a>
+                                <a href="reserve.html?room=signature-family"
+                                class="text-gold hover:text-forest text-xs font-bold uppercase tracking-widest transition">
+                                    Reserve
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- No Rooms Message -->
+                <p id="noRoomsMessage" class="hidden text-center text-muted py-12">
+                    No rooms are available in this category.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- AMENITIES SECTION -->
+        <section class="bg-white py-20 md:py-24">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="section-eyebrow">Comfort Comes First</span>
+
+                    <h2 class="font-display text-4xl sm:text-5xl mt-5">
+                        Thoughtful <em class="text-gold">Details.</em>
+                    </h2>
+
+                    <p class="text-muted text-sm leading-8 mt-5">
+                        Little touches that can make a stay feel more comfortable and convenient.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+                    <div class="border border-gray-100 p-7 text-center hover:border-gold transition">
+                        <i class="bi bi-wifi text-3xl text-gold"></i>
+                        <h3 class="font-display text-lg mt-4">Wi-Fi</h3>
+                    </div>
+
+                    <div class="border border-gray-100 p-7 text-center hover:border-gold transition">
+                        <i class="bi bi-snow text-3xl text-gold"></i>
+                        <h3 class="font-display text-lg mt-4">Air Conditioning</h3>
+                    </div>
+
+                    <div class="border border-gray-100 p-7 text-center hover:border-gold transition">
+                        <i class="bi bi-cup-hot text-3xl text-gold"></i>
+                        <h3 class="font-display text-lg mt-4">Refreshments</h3>
+                    </div>
+
+                    <div class="border border-gray-100 p-7 text-center hover:border-gold transition">
+                        <i class="bi bi-tv text-3xl text-gold"></i>
+                        <h3 class="font-display text-lg mt-4">Entertainment</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- RESERVATION CTA -->
+        <section class="relative bg-deep text-white py-20 md:py-28 overflow-hidden">
+
+            <div class="absolute inset-0 opacity-15">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80"
+                    alt=""
+                    loading="lazy"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+
+                <span class="text-gold text-[11px] font-bold tracking-[3px] uppercase">
+                    Your Stay Awaits
+                </span>
+
+                <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-6 mb-7">
+                    Find Your Perfect<br>
+                    <em class="text-gold">Escape.</em>
+                </h2>
+
+                <p class="text-white/75 text-sm sm:text-base leading-8 max-w-xl mx-auto mb-10">
+                    Have questions about our accommodation? Get in touch
+                    and let us help you plan your next stay.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+                    <a href="reserve.html"
+                    class="inline-flex items-center justify-center gap-5 bg-gold hover:bg-white text-deep px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Enquire About a Stay
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a href="contact.html"
+                    class="inline-flex items-center justify-center gap-5 border border-white/50 hover:bg-white hover:text-deep text-white px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Contact Us
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-[#0B241E] text-white pt-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16">
+
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-3 mb-7">
+                        <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">R</span>
+                        <span class="flex flex-col">
+                            <span class="font-display text-2xl leading-none">REGAL</span>
+                            <span class="text-gold text-[8px] tracking-[3px] uppercase mt-1">Hetauda Resort</span>
+                        </span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-8">
+                        Refined comfort, thoughtful hospitality and meaningful moments in Hetauda, Nepal.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Explore</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                        <li><a href="rooms.html" class="hover:text-gold transition">Rooms & Suites</a></li>
+                        <li><a href="dining.html" class="hover:text-gold transition">Dining</a></li>
+                        <li><a href="story.html" class="hover:text-gold transition">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Guest Information</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="reserve.html" class="hover:text-gold transition">Reservations</a></li>
+                        <li><a href="contact.html" class="hover:text-gold transition">Contact Us</a></li>
+                        <li><a href="#gallery" class="hover:text-gold transition">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Get in Touch</h3>
+                    <div class="space-y-5 text-sm text-white/60">
+                        <p class="flex gap-3">
+                            <i class="bi bi-geo-alt text-gold"></i>
+                            <span>Piple-05, Hetauda, Nepal</span>
+                        </p>
+                        <a href="tel:+9779855071256" class="flex gap-3 hover:text-gold transition">
+                            <i class="bi bi-telephone text-gold"></i>
+                            +977 9855071256
+                        </a>
+                        <a href="mailto:info@regalheaudaresort.com" class="flex gap-3 break-all hover:text-gold transition">
+                            <i class="bi bi-envelope text-gold"></i>
+                            info@regalheaudaresort.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 py-7 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50 text-center">
+                <p>&copy; <span id="year"></span> Regal Hetauda Resort. All Rights Reserved.</p>
+                <p>Hetauda, Nepal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top"
+            class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-gold text-deep shadow-lg hidden items-center justify-center hover:bg-forest hover:text-white transition">
+        <i class="bi bi-arrow-up text-xl"></i>
+    </button>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

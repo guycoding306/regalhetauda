@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience refined hospitality at Regal Hetauda Resort in Hetauda, Nepal. Explore rooms, dining and memorable stays.">
+    <title>Regal Hetauda Resort | A Refined Escape</title>
+
+    <!-- Tailwind CSS (development CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Custom Tailwind Configuration -->
+    <script src="js/tailwind.config.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body class="bg-cream text-deep overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+    <header id="mainNavbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-deep/70 lg:bg-transparent">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="flex items-center justify-between h-20 lg:h-24">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 shrink-0 relative z-50">
+                    <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">
+                        R
+                    </span>
+                    <span class="flex flex-col">
+                        <span class="font-display text-white text-2xl leading-none tracking-wide">REGAL</span>
+                        <span class="text-gold text-[8px] sm:text-[9px] uppercase tracking-[3px] mt-1">Hetauda Resort</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 xl:gap-9">
+                    <a href="index.html" class="text-white text-xs uppercase tracking-widest font-semibold">Home</a>
+                    <a href="rooms.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Rooms</a>
+                    <a href="dining.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Dining</a>
+                    <a href="story.html" class="text-gold hover:text-gold transition text-xs uppercase tracking-widest">Our Story</a>
+                    <a href="contact.html" class="text-white hover:text-gold transition text-xs uppercase tracking-widest">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <a href="reserve.html" class="hidden lg:inline-flex items-center gap-3 bg-gold hover:bg-white text-deep px-6 py-4 text-[11px] font-bold uppercase tracking-widest transition duration-300">
+                    Reserve Your Stay
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <!-- Mobile Hamburger -->
+                <button id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu"
+                        class="lg:hidden relative z-50 w-11 h-11 border border-gold/70 flex flex-col items-center justify-center gap-[5px] text-white">
+                    <span id="line1" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line2" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span id="line3" class="block w-5 h-[2px] bg-white transition-all duration-300"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobileMenu" class="hidden lg:hidden bg-deep border-t border-white/10">
+            <div class="px-6 py-6 flex flex-col gap-1 max-h-[calc(100dvh-80px)] overflow-y-auto">
+                <a href="index.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Home</a>
+                <a href="rooms.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Rooms & Suites</a>
+                <a href="dining.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Dining</a>
+                <a href="story.html" class="mobile-link text-gold py-3 border-b border-white/10 text-sm uppercase tracking-widest">Our Story</a>
+                <a href="contact.html" class="mobile-link text-white py-3 border-b border-white/10 text-sm uppercase tracking-widest">Contact</a>
+                <a href="reserve.html" class="mobile-link mt-5 bg-gold text-deep text-center py-4 text-xs font-bold uppercase tracking-widest">
+                    Reserve Your Stay
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==========================================
+        REGAL HETAUDA RESORT - OUR STORY
+    ========================================== -->
+
+    <main class="bg-cream overflow-hidden">
+
+        <!-- ================= PAGE HERO ================= -->
+        <section class="relative min-h-[460px] sm:min-h-[530px] lg:min-h-[620px] flex items-center justify-center pt-24 overflow-hidden">
+
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=85"
+                    alt="Elegant resort exterior"
+                    class="w-full h-full object-cover"
+                >
+
+                <div class="absolute inset-0 bg-gradient-to-r from-deep/95 via-deep/75 to-deep/40"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 w-full text-center">
+
+                <div class="flex items-center justify-center gap-4 mb-7">
+                    <span class="w-9 h-px bg-gold"></span>
+
+                    <span class="text-gold text-[10px] sm:text-xs font-bold tracking-[3px] uppercase">
+                        Discover Who We Are
+                    </span>
+
+                    <span class="w-9 h-px bg-gold"></span>
+                </div>
+
+                <h1 class="font-display text-white text-5xl sm:text-6xl lg:text-[90px] leading-tight">
+                    Our <em class="text-gold">Story.</em>
+                </h1>
+
+                <p class="text-white/80 text-sm sm:text-base leading-8 max-w-2xl mx-auto mt-6">
+                    A story inspired by warm hospitality, thoughtful experiences and the simple beauty of feeling welcome.
+                </p>
+
+                <!-- Breadcrumb -->
+                <nav aria-label="Breadcrumb" class="flex items-center justify-center gap-3 mt-9 text-[11px] uppercase tracking-[2px]">
+                    <a href="index.html" class="text-white/70 hover:text-gold transition">
+                        Home
+                    </a>
+
+                    <i class="bi bi-chevron-right text-gold text-[9px]"></i>
+
+                    <span class="text-gold">Our Story</span>
+                </nav>
+
+            </div>
+
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-1 bg-gold"></div>
+        </section>
+
+
+        <!-- ================= OUR INTRODUCTION ================= -->
+        <section class="py-20 md:py-28 lg:py-32">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                    <!-- Images -->
+                    <div class="relative pb-12 pr-10 sm:pr-16">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1100&q=85"
+                            alt="Relaxing resort setting"
+                            loading="lazy"
+                            class="w-full h-[370px] sm:h-[490px] lg:h-[580px] object-cover"
+                        >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=650&q=85"
+                            alt="Elegant resort room interior"
+                            loading="lazy"
+                            class="absolute bottom-0 right-0 w-[43%] h-[190px] sm:h-[260px] lg:h-[290px] object-cover border-[7px] sm:border-[10px] border-cream"
+                        >
+
+                        <div class="absolute top-8 left-0 sm:-left-4 bg-forest text-white px-6 py-6">
+                            <span class="font-display text-3xl text-gold">Regal</span>
+                            <p class="text-[10px] uppercase tracking-[2px] mt-2">
+                                Hetauda Resort
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+
+                        <span class="section-eyebrow">Welcome to Regal</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-[58px] leading-tight mt-6 mb-7">
+                            A Place Where<br>
+                            <em class="text-gold">Memories Begin.</em>
+                        </h2>
+
+                        <p class="text-muted text-sm sm:text-base leading-8 mb-5">
+                            Located in Hetauda, Nepal, Regal Hetauda Resort welcomes guests looking for comfort, relaxation and a memorable hospitality experience.
+                        </p>
+
+                        <p class="text-muted text-sm sm:text-base leading-8 mb-5">
+                            Our vision is to create an inviting setting where guests can step away from their everyday routines and enjoy meaningful moments with family, friends or loved ones.
+                        </p>
+
+                        <p class="text-muted text-sm sm:text-base leading-8 mb-9">
+                            From the atmosphere of our accommodation to the care behind each guest interaction, we aim to make every visit feel comfortable, personal and memorable.
+                        </p>
+
+                        <div class="flex items-center gap-5 border-t border-gray-200 pt-8">
+
+                            <div class="w-14 h-14 shrink-0 bg-forest flex items-center justify-center">
+                                <i class="bi bi-heart text-gold text-2xl"></i>
+                            </div>
+
+                            <div>
+                                <h3 class="font-display text-xl text-forest">
+                                    Hospitality with Heart
+                                </h3>
+
+                                <p class="text-muted text-xs leading-6 mt-2">
+                                    Inspired by warmth, comfort and genuine care.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OUR PHILOSOPHY ================= -->
+        <section class="bg-deep text-white py-20 md:py-28">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                    <!-- Text -->
+                    <div>
+
+                        <span class="text-gold text-[11px] uppercase tracking-[3px] font-bold">
+                            Our Philosophy
+                        </span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-6 mb-8">
+                            Hospitality Is<br>
+                            <em class="text-gold">More Than Service.</em>
+                        </h2>
+
+                        <p class="text-white/70 text-sm sm:text-base leading-8 mb-6">
+                            We believe great hospitality begins with making people feel welcome. It is reflected in the details, the atmosphere and the attention given to every guest.
+                        </p>
+
+                        <p class="text-white/70 text-sm leading-8 mb-9">
+                            Our approach is centred on thoughtful comfort, respectful service and creating an environment where guests can relax and enjoy their time.
+                        </p>
+
+                        <div class="border-l-2 border-gold pl-6 sm:pl-8 py-2 mb-10">
+
+                            <p class="font-display italic text-xl sm:text-2xl leading-relaxed text-white">
+                                "A memorable stay is not only about where you go, but how you feel while you are there."
+                            </p>
+
+                            <span class="block text-gold text-[10px] uppercase tracking-[2px] mt-5">
+                                Our Hospitality Philosophy
+                            </span>
+
+                        </div>
+
+                        <a href="rooms.html"
+                        class="inline-flex items-center justify-center gap-5 bg-gold hover:bg-white text-deep px-8 py-5 text-xs font-bold uppercase tracking-widest transition">
+                            Explore Our Rooms
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Image -->
+                    <div class="relative">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1100&q=85"
+                            alt="Beautiful hospitality setting"
+                            loading="lazy"
+                            class="w-full h-[380px] sm:h-[500px] lg:h-[600px] object-cover"
+                        >
+
+                        <div class="absolute bottom-0 right-0 bg-gold text-deep px-7 sm:px-10 py-7 sm:py-9">
+
+                            <i class="bi bi-stars text-3xl"></i>
+
+                            <h3 class="font-display text-xl sm:text-2xl mt-3">
+                                The Regal Experience
+                            </h3>
+
+                            <p class="text-[10px] uppercase tracking-[2px] mt-2">
+                                Comfort • Care • Connection
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OUR VALUES ================= -->
+        <section class="bg-white py-20 md:py-28">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="text-center max-w-3xl mx-auto mb-14">
+
+                    <span class="section-eyebrow">What Matters to Us</span>
+
+                    <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-5">
+                        The Values Behind<br>
+                        <em class="text-gold">Every Experience.</em>
+                    </h2>
+
+                    <p class="text-muted text-sm sm:text-base leading-8 mt-6">
+                        Our hospitality vision is shaped by the principles that make a guest experience feel personal and meaningful.
+                    </p>
+
+                </div>
+
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    <!-- Value 1 -->
+                    <div class="group border border-gray-100 bg-cream p-7 sm:p-8 hover:bg-forest transition-colors duration-500">
+
+                        <span class="text-gold text-xs font-bold tracking-widest">
+                            01
+                        </span>
+
+                        <div class="w-14 h-14 border border-gold/50 flex items-center justify-center mt-8 mb-7">
+                            <i class="bi bi-heart text-gold text-2xl"></i>
+                        </div>
+
+                        <h3 class="font-display text-2xl text-forest group-hover:text-white transition mb-4">
+                            Genuine Care
+                        </h3>
+
+                        <p class="text-muted group-hover:text-white/70 text-sm leading-7 transition">
+                            Treating every guest with warmth, kindness and thoughtful attention.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Value 2 -->
+                    <div class="group border border-gray-100 bg-cream p-7 sm:p-8 hover:bg-forest transition-colors duration-500">
+
+                        <span class="text-gold text-xs font-bold tracking-widest">
+                            02
+                        </span>
+
+                        <div class="w-14 h-14 border border-gold/50 flex items-center justify-center mt-8 mb-7">
+                            <i class="bi bi-flower1 text-gold text-2xl"></i>
+                        </div>
+
+                        <h3 class="font-display text-2xl text-forest group-hover:text-white transition mb-4">
+                            Thoughtful Comfort
+                        </h3>
+
+                        <p class="text-muted group-hover:text-white/70 text-sm leading-7 transition">
+                            Creating welcoming spaces where guests can relax and feel at ease.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Value 3 -->
+                    <div class="group border border-gray-100 bg-cream p-7 sm:p-8 hover:bg-forest transition-colors duration-500">
+
+                        <span class="text-gold text-xs font-bold tracking-widest">
+                            03
+                        </span>
+
+                        <div class="w-14 h-14 border border-gold/50 flex items-center justify-center mt-8 mb-7">
+                            <i class="bi bi-people text-gold text-2xl"></i>
+                        </div>
+
+                        <h3 class="font-display text-2xl text-forest group-hover:text-white transition mb-4">
+                            Meaningful Connection
+                        </h3>
+
+                        <p class="text-muted group-hover:text-white/70 text-sm leading-7 transition">
+                            Encouraging moments of togetherness and memorable shared experiences.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Value 4 -->
+                    <div class="group border border-gray-100 bg-cream p-7 sm:p-8 hover:bg-forest transition-colors duration-500">
+
+                        <span class="text-gold text-xs font-bold tracking-widest">
+                            04
+                        </span>
+
+                        <div class="w-14 h-14 border border-gold/50 flex items-center justify-center mt-8 mb-7">
+                            <i class="bi bi-stars text-gold text-2xl"></i>
+                        </div>
+
+                        <h3 class="font-display text-2xl text-forest group-hover:text-white transition mb-4">
+                            Memorable Moments
+                        </h3>
+
+                        <p class="text-muted group-hover:text-white/70 text-sm leading-7 transition">
+                            Making every visit an opportunity to create lasting memories.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= THE REGAL EXPERIENCE ================= -->
+        <section class="bg-cream py-20 md:py-28">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
+
+                    <div class="max-w-3xl">
+
+                        <span class="section-eyebrow">Experience Regal</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mt-5">
+                            Every Stay Has<br>
+                            <em class="text-gold">Its Own Story.</em>
+                        </h2>
+
+                        <p class="text-muted text-sm leading-8 mt-5">
+                            Discover the moments that can make a visit to Regal Hetauda Resort special.
+                        </p>
+
+                    </div>
+
+                    <a href="reserve.html"
+                    class="inline-flex items-center gap-4 text-forest hover:text-gold text-xs font-bold uppercase tracking-widest transition">
+                        Plan Your Stay
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                    <!-- Experience 1 -->
+                    <article class="group">
+
+                        <div class="relative overflow-hidden h-[330px] sm:h-[390px]">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                                alt="Comfortable resort bedroom"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-deep/80 via-transparent to-transparent"></div>
+
+                            <div class="absolute bottom-7 left-7 right-7">
+                                <span class="text-gold text-[10px] uppercase tracking-[2px]">
+                                    01 / Stay
+                                </span>
+
+                                <h3 class="font-display text-white text-3xl mt-2">
+                                    Restful Retreats
+                                </h3>
+                            </div>
+
+                        </div>
+
+                        <p class="text-muted text-sm leading-7 mt-5">
+                            Discover accommodation concepts created around comfort, relaxation and restful moments.
+                        </p>
+
+                        <a href="rooms.html"
+                        class="inline-flex items-center gap-3 text-forest hover:text-gold text-xs font-bold uppercase tracking-widest mt-5 transition">
+                            Explore Rooms
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Experience 2 -->
+                    <article class="group">
+
+                        <div class="relative overflow-hidden h-[330px] sm:h-[390px]">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
+                                alt="Elegant restaurant dining experience"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-deep/80 via-transparent to-transparent"></div>
+
+                            <div class="absolute bottom-7 left-7 right-7">
+                                <span class="text-gold text-[10px] uppercase tracking-[2px]">
+                                    02 / Savour
+                                </span>
+
+                                <h3 class="font-display text-white text-3xl mt-2">
+                                    Dining Moments
+                                </h3>
+                            </div>
+
+                        </div>
+
+                        <p class="text-muted text-sm leading-7 mt-5">
+                            Explore the pleasure of gathering around the table and sharing memorable meals.
+                        </p>
+
+                        <a href="dining.html"
+                        class="inline-flex items-center gap-3 text-forest hover:text-gold text-xs font-bold uppercase tracking-widest mt-5 transition">
+                            Explore Dining
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Experience 3 -->
+                    <article class="group md:col-span-2 lg:col-span-1">
+
+                        <div class="relative overflow-hidden h-[330px] sm:h-[390px]">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85"
+                                alt="Special celebration venue"
+                                loading="lazy"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            >
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-deep/80 via-transparent to-transparent"></div>
+
+                            <div class="absolute bottom-7 left-7 right-7">
+                                <span class="text-gold text-[10px] uppercase tracking-[2px]">
+                                    03 / Celebrate
+                                </span>
+
+                                <h3 class="font-display text-white text-3xl mt-2">
+                                    Special Gatherings
+                                </h3>
+                            </div>
+
+                        </div>
+
+                        <p class="text-muted text-sm leading-7 mt-5">
+                            Celebrate life's important moments with family, friends and loved ones.
+                        </p>
+
+                        <a href="contact.html"
+                        class="inline-flex items-center gap-3 text-forest hover:text-gold text-xs font-bold uppercase tracking-widest mt-5 transition">
+                            Make an Enquiry
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DISCOVER HETAUDA ================= -->
+        <section class="bg-white py-20 md:py-28">
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                    <!-- Content -->
+                    <div class="order-2 lg:order-1">
+
+                        <span class="section-eyebrow">Our Destination</span>
+
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-[58px] leading-tight mt-6 mb-7">
+                            Rooted in the<br>
+                            Heart of <em class="text-gold">Hetauda.</em>
+                        </h2>
+
+                        <p class="text-muted text-sm sm:text-base leading-8 mb-5">
+                            Hetauda is a city in Nepal's Bagmati Province, offering visitors a distinctive setting away from the country's larger metropolitan centres.
+                        </p>
+
+                        <p class="text-muted text-sm leading-8 mb-9">
+                            Regal Hetauda Resort takes inspiration from its location and the tradition of welcoming hospitality, inviting guests to experience the destination at their own pace.
+                        </p>
+
+                        <div class="flex items-start gap-4 bg-cream p-6 mb-9">
+
+                            <div class="w-12 h-12 shrink-0 bg-forest flex items-center justify-center">
+                                <i class="bi bi-geo-alt text-gold text-xl"></i>
+                            </div>
+
+                            <div>
+                                <h3 class="font-display text-xl text-forest mb-2">
+                                    Regal Hetauda Resort
+                                </h3>
+
+                                <p class="text-muted text-sm">
+                                    Hetauda, Bagmati Province, Nepal
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a href="contact.html"
+                        class="inline-flex items-center justify-center gap-5 bg-forest hover:bg-gold text-white hover:text-deep px-8 py-5 text-xs font-bold uppercase tracking-widest transition">
+                            Find Us & Get in Touch
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Destination Image -->
+                    <div class="relative order-1 lg:order-2 pb-10 pl-6 sm:pl-10">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1100&q=85"
+                            alt="Scenic landscape in Nepal"
+                            loading="lazy"
+                            class="w-full h-[380px] sm:h-[480px] lg:h-[560px] object-cover"
+                        >
+
+                        <div class="absolute bottom-0 left-0 bg-gold text-deep px-7 sm:px-10 py-7 sm:py-9">
+
+                            <i class="bi bi-geo-alt text-3xl"></i>
+
+                            <h3 class="font-display text-xl sm:text-2xl mt-3">
+                                Hetauda, Nepal
+                            </h3>
+
+                            <p class="text-[10px] uppercase tracking-[2px] mt-2">
+                                Discover Our Destination
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL CTA ================= -->
+        <section class="relative bg-forest text-white py-20 md:py-28 overflow-hidden">
+
+            <div class="absolute inset-0 opacity-15">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80"
+                    alt=""
+                    loading="lazy"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 text-center">
+
+                <span class="text-gold text-[11px] uppercase tracking-[3px] font-bold">
+                    Become Part of Our Story
+                </span>
+
+                <h2 class="font-display text-4xl sm:text-5xl lg:text-7xl leading-tight mt-6 mb-7">
+                    Every Great Story<br>
+                    <em class="text-gold">Begins Somewhere.</em>
+                </h2>
+
+                <p class="text-white/75 text-sm sm:text-base leading-8 max-w-2xl mx-auto mb-10">
+                    We invite you to discover Regal Hetauda Resort and create your own memorable moments with us.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+                    <a href="reserve.html"
+                    class="inline-flex items-center justify-center gap-5 bg-gold hover:bg-white text-deep px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Reserve Your Stay
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a href="contact.html"
+                    class="inline-flex items-center justify-center gap-5 border border-white/50 hover:bg-white hover:text-deep text-white px-9 py-5 text-xs font-bold uppercase tracking-widest transition">
+                        Contact Us
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-[#0B241E] text-white pt-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16">
+
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-3 mb-7">
+                        <span class="w-11 h-11 border border-gold text-gold flex items-center justify-center font-display text-2xl">R</span>
+                        <span class="flex flex-col">
+                            <span class="font-display text-2xl leading-none">REGAL</span>
+                            <span class="text-gold text-[8px] tracking-[3px] uppercase mt-1">Hetauda Resort</span>
+                        </span>
+                    </a>
+                    <p class="text-white/60 text-sm leading-8">
+                        Refined comfort, thoughtful hospitality and meaningful moments in Hetauda, Nepal.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Explore</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="index.html" class="hover:text-gold transition">Home</a></li>
+                        <li><a href="rooms.html" class="hover:text-gold transition">Rooms & Suites</a></li>
+                        <li><a href="dining.html" class="hover:text-gold transition">Dining</a></li>
+                        <li><a href="story.html" class="hover:text-gold transition">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Guest Information</h3>
+                    <ul class="space-y-4 text-sm text-white/60">
+                        <li><a href="reserve.html" class="hover:text-gold transition">Reservations</a></li>
+                        <li><a href="contact.html" class="hover:text-gold transition">Contact Us</a></li>
+                        <li><a href="#gallery" class="hover:text-gold transition">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-display text-xl mb-7">Get in Touch</h3>
+                    <div class="space-y-5 text-sm text-white/60">
+                        <p class="flex gap-3">
+                            <i class="bi bi-geo-alt text-gold"></i>
+                            <span>Piple-05, Hetauda, Nepal</span>
+                        </p>
+                        <a href="tel:+9779855071256" class="flex gap-3 hover:text-gold transition">
+                            <i class="bi bi-telephone text-gold"></i>
+                            +977 9855071256
+                        </a>
+                        <a href="mailto:info@regalheaudaresort.com" class="flex gap-3 break-all hover:text-gold transition">
+                            <i class="bi bi-envelope text-gold"></i>
+                            info@regalheaudaresort.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 py-7 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50 text-center">
+                <p>&copy; <span id="year"></span> Regal Hetauda Resort. All Rights Reserved.</p>
+                <p>Hetauda, Nepal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top"
+            class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-gold text-deep shadow-lg hidden items-center justify-center hover:bg-forest hover:text-white transition">
+        <i class="bi bi-arrow-up text-xl"></i>
+    </button>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
